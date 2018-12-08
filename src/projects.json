@@ -5,7 +5,7 @@
       "link":"",
       "priority":1,
       "github":"https://github.com/kevin-fang/reinforced-flappy-bird",
-      "description":""
+      "description":"Training neural networks to play the game Flappy Bird from scratch using Reinforcement Learning with policy gradients in TensorFlow."
    },
    {  
       "name":"simplif.ai [YHack 2018]",
@@ -13,7 +13,7 @@
       "link":"https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/05d960f/submission/",
       "priority":2,
       "github":"https://github.com/kevin-fang/simplif.ai",
-      "description":""
+      "description":"An application to identify overly complex words and phrases. Includes TF recurrent neural net, AutoML-trained neural net, and Wolfram Classify Markov chain."
    },
    {  
       "name":"PillUp [HopHacks 2018]",
@@ -21,7 +21,7 @@
       "link":"https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
       "priority":1,
       "github":"https://github.com/kevin-fang/PillUp",
-      "description":""
+      "description":"Low-cost, IoT enabled medicine dispenser with physician web view, client iOS app, and Google Home client. Johns Hopkins Hackathon Fall 2018 1st place winner."
    },
    {  
       "name":"Relief Mesh [HackHarvard 2018",
@@ -29,7 +29,7 @@
       "link":"https://devpost.com/software/relief-mesh-zhp5yu",
       "priority":2,
       "github":"https://github.com/kevin-fang/relief-mesh",
-      "description":""
+      "description":"Decentralized mesh network for disaster relief with custom application support. Built with Raspberry Pi Zero, LoRA long-range radios, and Flask."
    },
    {  
       "name":"Solanum Time",
@@ -37,7 +37,7 @@
       "link":"https://solanumti.me",
       "github":"http://github.com/kevin-fang/solanum",
       "priority":3,
-      "description":""
+      "description":"A well-designed pomodoro timer in built with React.js, material-ui, and odometer.js."
    },
    {  
       "name":"Climate Sentiment",
@@ -45,23 +45,15 @@
       "link":"https://public.tableau.com/profile/kevin.fang#!/vizhome/DigitalExhibit/SentimentDigitalExhibit",
       "github":"https://github.com/kevin-fang/climate-sentiment",
       "priority":2,
-      "description":""
-   },
-   {  
-      "name":"Student Jobs Finder",
-      "image":"",
-      "link":"",
-      "priority":3,
-      "github":"https://github.com/kevin-fang/student-jobs-finder",
-      "description":""
+      "description":"An analysis of sentiment towards climate change based off CNN, Fox News, the Economist, and Reuters, using the Google Cloud Platform NLP toolkit. Visualized in Tableau."
    },
    {  
       "name":"Logical Inference",
       "image":"",
       "link":"",
-      "priority":3,
+      "priority":2,
       "github":"https://github.com/kevin-fang/logical-inference",
-      "description":"Aristotelian logic system implemented in C."
+      "description":"An Aristotelian logic system implemented in C. Allows users to make assertions and then solves user queries."
    },
    {  
       "name":"FenceMe Fencing Scorekeeper",
@@ -69,6 +61,6 @@
       "link":"",
       "priority":2,
       "github":"https://github.com/kevin-fang/FenceMe-Scorekeeper",
-      "description":""
+      "description":"An elegant and easy to to keep track of fencing matches. Built in Java, Kotlin, RxJava, and Android Studio."
    }
 ]

@@ -7,6 +7,11 @@ import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css'
 
 let projects_list = require('./projects.json')
+let experience_list = require('./experience.json')
+
+projects_list.sort((a, b) => {
+  return a.priority - b.priority
+})
 
 class App extends Component {
   getAbout = () => {
@@ -51,16 +56,16 @@ class App extends Component {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div style={{position: 'absolute', right: 0, margin: 10}} id="navbarBasicExample" className="navbar-menu">
-          <a className="navbar-item">
+          <a className="navbar-item" href="#about">
             About
           </a>
-          <a className="navbar-item">
+          <a className="navbar-item" href="#projects">
             Portfolio
           </a>
-          <a className="navbar-item">
+          <a className="navbar-item" href="#experience">
             Experience
           </a>
-          <a className="navbar-item">
+          <a className="navbar-item" href="#contact">
             Contact
           </a>
         </div>
@@ -68,33 +73,99 @@ class App extends Component {
     )
   }
 
+  makeCard = (project) => {
+    if (project.hidden) {
+      return null
+    }
+    return (
+      <div className="card" style={{width: "40vh"}}>
+        <header className="card-header">
+          <p className="card-header-title">
+            {project.name}
+          </p>
+        </header>
+        <div className="card-content" style={{height: "25vh"}}>
+          <div className="content">
+            {project.description}
+          </div>
+        </div>
+        <footer className="card-footer">
+          <a href={project.link} target="_blank" className="card-footer-item">Link</a>
+          <a href={project.github} target="_blank" className="card-footer-item">GitHub</a>
+        </footer>
+      </div>
+    )
+  }
+
   getProjects = () => {
     return (
-      <ul>
+      <Grid
+          container
+          spacing={24}
+          wrap={"wrap"}
+          direction="row"
+          justify="center">
+          {
+            projects_list.map((project) => {
+              return <Grid item>{this.makeCard(project)}</Grid>
+            })
+          }
+      </Grid>
+    )
+  }
+
+  getExperience = () => {
+    return (
+      <div style={{textAlign: 'left', margin: 10}}>
         {
-          projects_list.map((project) => {
-            return <li>{project.name}</li>
+          experience_list.map((experience) => {
+            return <div>
+              <b style={{fontSize: 40}}>{experience.company_name}</b><br/>
+              {experience.description.map((description) => {
+                return <li style={{marginLeft: 10}}>{description}</li>
+              })}<br/>
+            </div>
           })
         }
-      </ul>
+      </div>
+    )
+  }
+
+  getContact = () => {
+    return (
+      <div>
+        [Contact goes here]
+      </div>
     )
   }
 
   render() {
     return (
-      <div className="App">
-        <div style={{height: "100%"}}>
+      <div className="App" id="about">
+        <div style={{minHeight: '100vh'}}>
           {this.getNavbar()}
           {this.getAbout()}
         </div>
         <a href="#projects">
-          <i style={{position: 'absolute', bottom: 10}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
+          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </a>
-        <div id="projects" style={{position: 'absolute', top: "100%", height: '100%', width: "100%"}}>
-          <div style={{fontSize: '10vh', margin: 30, marginTop: 0}}>
-            Projects
+        <div id="projects" style={{minHeight: '100vh', width: "100%"}}>
+          <div style={{fontSize: '10vh', margin: 30, marginTop: 0, marginBottom: 0}}>
+            Portfolio
           </div>
           {this.getProjects()}
+        </div>
+        <div id="experience" style={{minHeight: '100vh', width: "100%"}}>
+          <div style={{fontSize: '10vh', margin: 30, marginTop: 0}}>
+            Experience
+          </div>
+          {this.getExperience()}
+        </div>
+        <div id="contact" style={{minHeight: '100vh', width: "100%"}}>
+          <div style={{fontSize: '10vh', margin: 30, marginTop: 0}}>
+            Contact
+          </div>
+          {this.getContact()}
         </div>
       </div>
     );
