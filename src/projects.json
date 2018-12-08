@@ -2,7 +2,7 @@
    {  
       "name":"Reinforced Flappy Bird",
       "image":"",
-      "link":"",
+      "link":"https://www.youtube.com/watch?v=PNE6KFNn1yY",
       "priority":1,
       "github":"https://github.com/kevin-fang/reinforced-flappy-bird",
       "description":"Training neural networks to play the game Flappy Bird from scratch using Reinforcement Learning with policy gradients in TensorFlow."

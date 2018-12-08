@@ -2,9 +2,10 @@
 	{
 		"company_name": "Curoverse Research/Veritas Genetics",
 		"position": "Data Science Summer Intern",
+		"company_link": "https://curoverse.com",
 		"description": [
 			"Created machine learning classifiers to predict eye color and blood type to 95% accuracy using scikit-learn and TensorFlow",
-			"Developed prediction pipelines in Arvados, an open-source bioinformatics platform, using Java and Common Workflow Language (CWL",
+			"Developed prediction pipelines in Arvados, an open-source bioinformatics platform, using Java and Common Workflow Language (CWL)",
 			"Presented poster on open science and phenotypic analysis at the i2b2/tranSMART symposium to 100+ attendees at Harvard Medical School"
 		],
 		"dates": "2016, 2017, 2018",
@@ -13,21 +14,23 @@
 	{
 		"company_name": "MIT Media Lab",
 		"position": "Biomechatronics Intern",
+		"company_link": "https://media.mit.edu/groups/biomechatronics/overview",
 		"description": [
 			"Developed high throughput compute cluster for finite element modeling of prosthetic limb designed that increased computation speed by over 60%",
 			"Automated job management and submission using custom Python scripts"
 		],
-		"dates": "03/2018",
+		"dates": "March 2018",
 		"location": "Cambridge, MA"
 	},
 	{
 		"company_name": "Tufts Center for Engineering Education and Outreach (CEEO)",
 		"position": "Intern",
+		"company_link": "https://ceeo.tufts.edu",
 		"description": [
 			"Interfaced brain wave reader to drive EV3 robot using Arduino",
 			"Created inventory management system for Tufts CEEO Makerspace using Python scripts and QR codes"
 		],
-		"dates": "07/2015 - 08/2015",
+		"dates": "July 2015 - August 2015",
 		"location": "Medford, MA"
 	}
 ]

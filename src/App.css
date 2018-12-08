@@ -9,7 +9,7 @@
 
 .SideBySide {
   display: flex;
-
+  justify-content: center;
 }
 
 .Name {
