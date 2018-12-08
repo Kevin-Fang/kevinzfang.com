@@ -1,0 +1,74 @@
+[  
+   {  
+      "name":"Reinforced Flappy Bird",
+      "image":"",
+      "link":"",
+      "priority":1,
+      "github":"https://github.com/kevin-fang/reinforced-flappy-bird",
+      "description":""
+   },
+   {  
+      "name":"simplif.ai [YHack 2018]",
+      "image":"",
+      "link":"https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/05d960f/submission/",
+      "priority":2,
+      "github":"https://github.com/kevin-fang/simplif.ai",
+      "description":""
+   },
+   {  
+      "name":"PillUp [HopHacks 2018]",
+      "image":"",
+      "link":"https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
+      "priority":1,
+      "github":"https://github.com/kevin-fang/PillUp",
+      "description":""
+   },
+   {  
+      "name":"Relief Mesh [HackHarvard 2018",
+      "image":"",
+      "link":"https://devpost.com/software/relief-mesh-zhp5yu",
+      "priority":2,
+      "github":"https://github.com/kevin-fang/relief-mesh",
+      "description":""
+   },
+   {  
+      "name":"Solanum Time",
+      "image":"",
+      "link":"https://solanumti.me",
+      "github":"http://github.com/kevin-fang/solanum",
+      "priority":3,
+      "description":""
+   },
+   {  
+      "name":"Climate Sentiment",
+      "image":"",
+      "link":"https://public.tableau.com/profile/kevin.fang#!/vizhome/DigitalExhibit/SentimentDigitalExhibit",
+      "github":"https://github.com/kevin-fang/climate-sentiment",
+      "priority":2,
+      "description":""
+   },
+   {  
+      "name":"Student Jobs Finder",
+      "image":"",
+      "link":"",
+      "priority":3,
+      "github":"https://github.com/kevin-fang/student-jobs-finder",
+      "description":""
+   },
+   {  
+      "name":"Logical Inference",
+      "image":"",
+      "link":"",
+      "priority":3,
+      "github":"https://github.com/kevin-fang/logical-inference",
+      "description":"Aristotelian logic system implemented in C."
+   },
+   {  
+      "name":"FenceMe Fencing Scorekeeper",
+      "image":"",
+      "link":"",
+      "priority":2,
+      "github":"https://github.com/kevin-fang/FenceMe-Scorekeeper",
+      "description":""
+   }
+]
