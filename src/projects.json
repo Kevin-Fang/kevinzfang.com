@@ -18,14 +18,13 @@
       "description":"To make research and legal writing more accessible, at YHack 2018 we created an application that would serve as an AI 'companion' for writers, providing feedback as to whether sentences would be overly complicated or difficult to understand. We trained three different classifiers: a custom recurrent neural net, a Google Cloud AutoML natural language classifier, and a Markov Chain using Wolfram Classify, and achieved over 80% accuracy."
    },
    {  
-      "name":"PillUp [HopHacks 2018]",
+      "name":"PillUp [HopHacks 2018 1st Place Winnner]",
       "image":"./pillup.jpg",
       "link":"https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
       "priority":1,
       "summary": "A low-cost, IoT enabled medicine dispenser for everyone",
       "github":"https://github.com/kevin-fang/PillUp",
-      "description":"At HopHacks 2018, we created a robotic pill dispenser to simplify the daily routine of taking different medicines. We created a physical device using servo motors to dispense medicine, a React.js-based web frontend for physicians to monitor patient statuses, and an iOS mobile client for patients to easily dispense their medicine in the morning.",
-      "highlight": "Johns Hopkins Hackathon overall 1st place winner."
+      "description":"At HopHacks 2018, we created a robotic pill dispenser to simplify the daily routine of taking different medicines. We created a physical device using servo motors to dispense medicine, a React.js-based web frontend for physicians to monitor patient statuses, and an iOS mobile client for patients to easily dispense their medicine in the morning."
    },
    {  
       "name":"Relief Mesh [HackHarvard 2018]",
@@ -34,12 +33,11 @@
       "priority":2,
       "summary": "Mesh network to help disaster relief",
       "github":"https://github.com/kevin-fang/relief-mesh",
-      "description":"After seeing the damage that hurricane Florence caused, destroying billions of dollars worth of infrastructure, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet. ",
-      "highlight": "Facebook: best hack for building communities"
+      "description":"After seeing the damage that hurricane Florence caused, destroying billions of dollars worth of infrastructure, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet. We ended up winning Facebook's award for 'best hack for building communities'"
    },
    {  
       "name":"Solanum Time",
-      "image":"",
+      "image":"./solanum.png",
       "summary": "A well-designed pomodoro timer",
       "link":"https://solanumti.me",
       "github":"http://github.com/kevin-fang/solanum",
@@ -48,8 +46,8 @@
    },
    {  
       "name":"Climate Sentiment",
-      "image":"",
-      "link":"https://public.tableau.com/profile/kevin.fang#!/vizhome/DigitalExhibit/SentimentDigitalExhibit",
+      "image":"./climate-sentiment.png",
+      "link":"https://public.tableau.com/profile/kevin.fang#!/vizhome/DigitalExhibit/ClimateChangeintheMedia",
       "github":"https://github.com/kevin-fang/climate-sentiment",
       "summary": "An analysis of sentiment towards climate change over the years",
       "priority":2,
@@ -57,7 +55,7 @@
    },
    {  
       "name":"Logical Inference",
-      "image":"",
+      "image":"./logicalinference.png",
       "link":"",
       "summary": "An Aristotelian logic system, implemented in C",
       "priority":2,
@@ -66,7 +64,7 @@
    },
    {  
       "name":"FenceMe Fencing Scorekeeper",
-      "image":"",
+      "image":"https://raw.githubusercontent.com/kevin-fang/FenceMe-Scorekeeper/master/graphics/score-listing-screenshots/timing.png",
       "link":"",
       "summary": "An elegant and easy Android app developed to keep track of fencing matches",
       "priority":2,
