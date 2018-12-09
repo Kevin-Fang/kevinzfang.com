@@ -24,7 +24,7 @@
       "description":"Low-cost, IoT enabled medicine dispenser with physician web view, client iOS app, and Google Home client. Johns Hopkins Hackathon Fall 2018 1st place winner."
    },
    {  
-      "name":"Relief Mesh [HackHarvard 2018",
+      "name":"Relief Mesh [HackHarvard 2018]",
       "image":"",
       "link":"https://devpost.com/software/relief-mesh-zhp5yu",
       "priority":2,
@@ -53,7 +53,7 @@
       "link":"",
       "priority":2,
       "github":"https://github.com/kevin-fang/logical-inference",
-      "description":"An Aristotelian logic system implemented in C. Allows users to make assertions and then solves user queries."
+      "description":"An Aristotelian logic system implemented in C. After users make assertions, the system will then solve logical queries using knowledge from previous assertions."
    },
    {  
       "name":"FenceMe Fencing Scorekeeper",
@@ -61,6 +61,6 @@
       "link":"",
       "priority":2,
       "github":"https://github.com/kevin-fang/FenceMe-Scorekeeper",
-      "description":"An elegant and easy to to keep track of fencing matches. Built in Java, Kotlin, RxJava, and Android Studio."
+      "description":"An elegant and easy Android app developed to keep track of fencing matches. Built in Java, Kotlin, RxJava, and Android Studio."
    }
 ]

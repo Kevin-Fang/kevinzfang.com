@@ -4,6 +4,7 @@ import Typist from 'react-typist'
 import Grid from '@material-ui/core/Grid'
 import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 let projects_list = require('./projects.json')
 let experience_list = require('./experience.json')
@@ -17,8 +18,8 @@ class App extends Component {
   getAbout = () => {
     return (
       <div>
-        <div style={{marginTop: "1vh"}}>
-          <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: false}}>
+        <div style={{marginTop: "1vh", fontSize: '10vh'}}>
+          <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
             <span className="Name">Hi! I'm Kevin Fang</span>
           </Typist>
         </div>
@@ -33,10 +34,10 @@ class App extends Component {
           direction="column"
           justify="center">
           <div>
-            <a href="https://github.com/kevin-fang/">
+            <a href="https://github.com/kevin-fang/" target="_blank" rel="noopener noreferrer" >
               <img alt="GitHub" src={'./github.png'} style={{width: '4vh', margin: 5, opacity: 0.5}}/>
             </a>
-            <a href="https://linkedin.com/in/kevin-fang/">
+            <a href="https://linkedin.com/in/kevin-fang/" target="_blank" rel="noopener noreferrer" >
               <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '4vh', margin: 5, opacity: 0.5}}/>
             </a>
             <a href="mailto:kevinzfang@gmail.com">
@@ -60,15 +61,18 @@ class App extends Component {
           {/*<a className="navbar-item" href="#about">
             About
           </a>*/}
-          <a className="navbar-item" href="#projects">
+          <AnchorLink className="navbar-item" href="#projects" data-scroll>
             Portfolio
-          </a>
-          <a className="navbar-item" href="#experience">
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#experience" data-scroll>
             Experience
-          </a>
-          <a className="navbar-item" href="#contact">
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#skills" data-scroll>
+            Skills
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#contact" data-scroll>
             Contact
-          </a>
+          </AnchorLink>
         </div>
       </nav>
     )
@@ -85,14 +89,14 @@ class App extends Component {
             {project.name}
           </p>
         </header>
-        <div className="card-content" style={{height: "25vh"}}>
+        <div className="card-content" style={{minHeight: "20vh"}}>
           <div className="content">
             {project.description}
           </div>
         </div>
         <footer className="card-footer">
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-footer-item">Link</a>
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-footer-item">GitHub</a>
+          {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" className="card-footer-item">Link</a>}
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-footer-item">GitHub</a>        
         </footer>
       </div>
     )
@@ -108,7 +112,7 @@ class App extends Component {
           justify="center">
           {
             projects_list.map((project) => {
-              return <Grid item>{this.makeCard(project)}</Grid>
+              return <Grid item key={project.name}>{this.makeCard(project)}</Grid>
             })
           }
       </Grid>
@@ -135,8 +139,33 @@ class App extends Component {
 
   getContact = () => {
     return (
+      <div style={{marginBottom: "4vh"}}>
+        <span>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
+      </div>
+    )
+  }
+
+  createSkillsRow = (skillType, skills) => {
+    return (
       <div>
-        [Contact goes here]
+        <span style={{fontSize: '2.5vh'}}>{skillType}</span><br/><br/>
+          <div className="SideBySide">
+            {
+              skills.map((skill) => {
+                if (skill.icon) {
+                  return (<div style={{marginLeft: 20, marginRight: 20}}>
+                    <i className={skill.icon} style={{fontSize: "8vh", opacity: 0.7}}/><br/>
+                    <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
+                  </div>)
+                } else {
+                  return <div style={{marginLeft: 20, marginRight: 20}}>
+                    <img alt={skill.name} src={skill.logo} style={{width: "7.5vh", opacity: 0.7}}/><br/>
+                    <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
+                  </div>
+                }
+              })
+            }
+          </div><br/>
       </div>
     )
   }
@@ -144,78 +173,10 @@ class App extends Component {
   getSkills = () => {
     return (
       <div>
-        <span style={{fontSize: '2.5vh'}}>Languages</span><br/><br/>
-        <div className="SideBySide">
-          {
-            skills.languages.map((skill) => {
-              if (skill.icon) {
-                return (<div style={{marginLeft: 20, marginRight: 20}}>
-                  <i className={skill.icon} style={{fontSize: "5vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>)
-              } else {
-                return <div style={{marginLeft: 20, marginRight: 20}}>
-                  <img src={skill.logo} style={{width: "4.65vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>
-              }
-            })
-          }
-        </div><br/>
-        <span style={{fontSize: '2.5vh'}}>Libraries</span><br/><br/>
-        <div className="SideBySide">
-          {
-            skills.libraries.map((skill) => {
-              if (skill.icon) {
-                return (<div style={{marginLeft: 20, marginRight: 20}}>
-                  <i className={skill.icon} style={{fontSize: "5vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>)
-              } else {
-                return <div style={{marginLeft: 20, marginRight: 20}}>
-                  <img src={skill.logo} style={{width: "4.65vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>
-              }
-            })
-          }
-        </div><br/>
-        <span style={{fontSize: '2.5vh'}}>Web</span><br/><br/>
-        <div className="SideBySide">
-          {
-            skills.web.map((skill) => {
-              if (skill.icon) {
-                return (<div style={{marginLeft: 20, marginRight: 20}}>
-                  <i className={skill.icon} style={{fontSize: "5vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>)
-              } else {
-                return <div style={{marginLeft: 20, marginRight: 20}}>
-                  <img src={skill.logo} style={{width: "4.65vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>
-              }
-            })
-          }
-        </div><br/>
-        <span style={{fontSize: '2.5vh'}}>Miscellaneous</span><br/><br/>
-        <div className="SideBySide">
-          {
-            skills.misc.map((skill) => {
-              if (skill.icon) {
-                return (<div style={{marginLeft: 20, marginRight: 20}}>
-                  <i className={skill.icon} style={{fontSize: "5vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>)
-              } else {
-                return <div style={{marginLeft: 20, marginRight: 20}}>
-                  <img src={skill.logo} style={{width: "4.65vh", opacity: 0.6}}/><br/>
-                  <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
-                </div>
-              }
-            })
-          }
-        </div><br/>
+        {this.createSkillsRow("Languages", skills.languages)}
+        {this.createSkillsRow("Libraries", skills.libraries)}
+        {this.createSkillsRow("Web", skills.web)}
+        {this.createSkillsRow("Miscellaneous", skills.misc)}
       </div>
     )
   }
@@ -223,35 +184,53 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="about">
-        <div style={{minHeight: '100vh'}}>
+        <div id="about" style={{minHeight: '100vh'}}>
           {this.getNavbar()}
           {this.getAbout()}
         </div>
-        <a href="#projects">
-          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
-        <div id="projects" style={{minHeight: '100vh', width: "100%"}}>
+        <AnchorLink href="#projects">
+          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+        </AnchorLink>
+
+
+        <div id="projects" style={{width: "100%"}}>
           <div style={{fontSize: '10vh', margin: 30, marginTop: 0, marginBottom: 0}}>
             <b>Portfolio</b>
           </div>
-          {this.getProjects()}
+          {this.getProjects()}<br/>
+          <AnchorLink href="#experience" style={{position: 'relative', bototm: 0}}>
+            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+          </AnchorLink>
         </div>
-        <div id="experience" style={{minHeight: '100vh', width: "100%"}}>
+
+
+        <div id="experience" style={{width: "100%"}}>
           <div style={{fontSize: '10vh', margin: 30, marginTop: 0}}>
             <b>Experience</b>
           </div>
           {this.getExperience()}
-          <div style={{fontSize: '7vh', marginTop: 0}}>
+          <AnchorLink href="#skills" style={{bottom: "-100vh"}}>
+            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+          </AnchorLink>
+        </div>
+
+        <div id="skills" style={{width: '100%'}}>
+          <div style={{fontSize: '10vh', marginTop: 0}}>
             <b>Skills</b>
           </div>
           {this.getSkills()}
+          <AnchorLink href="#contact" style={{bottom: "-100vh"}}>
+            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+          </AnchorLink>
         </div>
-        <div id="contact" style={{minHeight: '100vh', width: "100%"}}>
-          <div style={{fontSize: '10vh', margin: 30, marginTop: 0}}>
-            <b>Contact</b>
+
+        <div id="contact" style={{width: "100%"}}>
+          <div style={{fontSize: '8vh', marginTop: 0}}>
+            Want to get in touch?
           </div>
           {this.getContact()}
         </div>
+        <span style={{margin: '5vh'}}>© Kevin Fang, 2018</span><br/>
       </div>
     );
   }

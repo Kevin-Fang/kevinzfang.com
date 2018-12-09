@@ -36,7 +36,7 @@
       },
       {  
          "name":"NumPy",
-         "logo":"numpy.svg"
+         "logo":"numpy.png"
       }
    ],
    "web":[  
@@ -73,6 +73,10 @@
       {  
          "name":"Git",
          "icon":"devicon-git-plain colored"
+      },
+      {  
+         "name":"GitHub",
+         "icon":"devicon-github-plain colored"
       },
       {  
          "name":"Docker",
