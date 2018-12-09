@@ -12,9 +12,9 @@ export default class ExperienceComponent extends Component {
 	              <div style={{marginTop: "2.5vh"}}>
 	                <i>{experience.dates}</i><br/>
 
-	                <b style={{fontSize: "3vh", marginTop: 0}}>{experience.position} @ <a target="_blank" rel="noopener noreferrer" href={experience.company_link}>{experience.company_name}</a></b><br/>
+	                <b style={{fontSize: "4vh", marginTop: 0, maxWidth: '50vw', flexWrap: 'wrap', textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>{experience.position} @ <a target="_blank" rel="noopener noreferrer" href={experience.company_link}>{experience.company_name}</a></b><br/>
 	                {experience.description.map((description) => {
-	                  return <span style={{textAlign: 'left', maxWidth: '80vh', display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>> {description}</span>
+	                  return <span style={{textAlign: 'left', maxWidth: '50vw', display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>> {description}</span>
 	                })}
 	                <br/>
 	              </div>

@@ -42,10 +42,12 @@ class App extends Component {
             </a>
           </div>
         </Grid>
-        <div style={{fontSize: '3vh', marginTop: '2vh'}}>
-          Undergrad studying Computer Science,<br/>
-          interested in Machine Learning/AI, bioinformatics, and financial markets.<br/>
-          <div style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</div>
+        <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
+          <span style={{maxWidth: '100vh', fontSize: "3vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
+            Undergrad studying Computer Science,
+            interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
+            <span style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</span>
+          </span>
         </div>
       </div>
     )
@@ -80,8 +82,8 @@ class App extends Component {
 
   getContact = () => {
     return (
-      <div style={{marginBottom: "4vh"}}>
-        <span>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
+      <div style={{marginBottom: "4vh", margin: 20}}>
+        <span style={{maxWidth: '100vh', fontSize: "3vh", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
       </div>
     )
   }
@@ -97,25 +99,35 @@ class App extends Component {
           <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
+        <hr className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+
         <AboutComponent />
-        <AnchorLink href="#projects" style={{position: 'relative', bototm: 0}}>
+        <AnchorLink href="#experience" style={{position: 'relative', bottom: 0}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <ProjectsComponent />
-        <AnchorLink href="#experience" style={{position: 'relative', bototm: 0}}>
-          <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
-        </AnchorLink>
+        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
 
         <ExperienceComponent />
+        <AnchorLink href="#projects" style={{position: 'relative', bottom: 0}}>
+          <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
+        </AnchorLink>
+
+        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+
+        <ProjectsComponent />
         <AnchorLink href="#skills" style={{bottom: "-100vh"}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
+
+        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
 
         <SkillsComponent />
         <AnchorLink href="#contact" style={{bottom: "-100vh"}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
+
+        <div className="divider" style={{maxWidth: '50vh', marginLeft: 'auto', marginRight: 'auto'}}/>
 
         <div id="contact" style={{width: "100%"}}>
           <div style={{fontSize: '8vh', marginTop: 0}}>

@@ -12,6 +12,13 @@
   justify-content: center;
 }
 
+.divider {
+  background: rgba(200, 200, 200);
+  height: 1px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .Name {
   font-size: 10vh;
 }

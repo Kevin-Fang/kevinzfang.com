@@ -18,7 +18,7 @@
       "description":"To make research and legal writing more accessible, at YHack 2018 we created an application that would serve as an AI 'companion' for writers, providing feedback as to whether sentences would be overly complicated or difficult to understand. We trained three different classifiers: a custom recurrent neural net, a Google Cloud AutoML natural language classifier, and a Markov Chain using Wolfram Classify, and achieved over 80% accuracy."
    },
    {  
-      "name":"PillUp [HopHacks 2018 1st Place Winnner]",
+      "name":"PillUp [HopHacks 2018 1st Place Winner]",
       "image":"./pillup.jpg",
       "link":"https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
       "priority":1,
@@ -33,7 +33,7 @@
       "priority":2,
       "summary": "Mesh network to help disaster relief",
       "github":"https://github.com/kevin-fang/relief-mesh",
-      "description":"After seeing the damage that hurricane Florence caused, destroying billions of dollars worth of infrastructure, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet. We ended up winning Facebook's award for 'best hack for building communities.'"
+      "description":"After seeing the damage caused by hurricane Florence, destroying billions of dollars worth of infrastructure, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet. We ended up winning Facebook's award for 'best hack for building communities.'"
    },
    {  
       "name":"Solanum Time",
