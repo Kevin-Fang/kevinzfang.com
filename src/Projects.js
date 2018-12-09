@@ -29,7 +29,7 @@ export default class ProjectComponent extends Component {
 	      return null
 	    }
 	    return (
-	      <div className="card" style={{maxWidth: "100vw"}}>
+	      <div className="card" style={{maxWidth: "75vh"}}>
 	        <header className="card-header">
 	          <p className="card-header-title" style={{fontSize: "2.5vh"}}>
 	            {project.name}

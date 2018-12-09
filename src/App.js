@@ -43,7 +43,7 @@ class App extends Component {
           </div>
         </Grid>
         <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
-          <span style={{maxWidth: '100vh', fontSize: "3vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
+          <span style={{maxWidth: '65vw', fontSize: "3vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
             Undergrad studying Computer Science,
             interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
             <span style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</span>
@@ -63,11 +63,11 @@ class App extends Component {
           <AnchorLink className="navbar-item" href="#about">
             About
           </AnchorLink>
-          <AnchorLink className="navbar-item" href="#projects">
-            Projects
-          </AnchorLink>
           <AnchorLink className="navbar-item" href="#experience">
             Experience
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#projects">
+            Projects
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#skills">
             Skills
@@ -83,7 +83,7 @@ class App extends Component {
   getContact = () => {
     return (
       <div style={{marginBottom: "4vh", margin: 20}}>
-        <span style={{maxWidth: '100vh', fontSize: "3vh", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
+        <span style={{maxWidth: '75vw', fontSize: "3vh", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
       </div>
     )
   }
