@@ -15,12 +15,12 @@ projects_list.sort((a, b) => {
 })
 
 class App extends Component {
-  getAbout = () => {
+  getMain = () => {
     return (
       <div>
         <div style={{marginTop: "1vh", fontSize: '10vh'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
-            <span className="Name">Hi! I'm Kevin Fang</span>
+            <span className="Name">Hi! I'm Kevin Fang!</span>
           </Typist>
         </div>
         <img
@@ -46,9 +46,9 @@ class App extends Component {
           </div>
         </Grid>
         <div style={{fontSize: '3vh', marginTop: '2vh'}}>
-          I'm currently a freshman studying Computer Science at NYU,<br/>
+          I'm currently an undergrad studying Computer Science,<br/>
           interested in Machine Learning/AI, bioinformatics, and financial markets.<br/>
-          <div style={{paddingTop: '1.5vh'}}>Currently, I'm exploring software engineering and data science.</div>
+          <div style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</div>
         </div>
       </div>
     )
@@ -61,16 +61,19 @@ class App extends Component {
           {/*<a className="navbar-item" href="#about">
             About
           </a>*/}
-          <AnchorLink className="navbar-item" href="#projects" data-scroll>
+          <AnchorLink className="navbar-item" href="#about">
+            About
+          </AnchorLink>
+          <AnchorLink className="navbar-item" href="#projects">
             Portfolio
           </AnchorLink>
-          <AnchorLink className="navbar-item" href="#experience" data-scroll>
+          <AnchorLink className="navbar-item" href="#experience">
             Experience
           </AnchorLink>
-          <AnchorLink className="navbar-item" href="#skills" data-scroll>
+          <AnchorLink className="navbar-item" href="#skills">
             Skills
           </AnchorLink>
-          <AnchorLink className="navbar-item" href="#contact" data-scroll>
+          <AnchorLink className="navbar-item" href="#contact">
             Contact
           </AnchorLink>
         </div>
@@ -83,15 +86,20 @@ class App extends Component {
       return null
     }
     return (
-      <div className="card" style={{width: "40vh"}}>
+      <div className="card" style={{width: "80vh"}}>
         <header className="card-header">
           <p className="card-header-title">
             {project.name}
           </p>
         </header>
-        <div className="card-content" style={{minHeight: "20vh"}}>
-          <div className="content">
-            {project.description}
+        <div className="card-content" style={{minHeight: "25vh"}}>
+          <div className="content" style={{textAlign: 'center', lineHeight: '24pt'}}>
+            {project.image && <div><img src={project.image} style={{maxHeight: '60vh'}}/><br/></div>}
+            <i>{project.summary}</i><br/><br/>
+            <div style={{textAlign: 'left'}}>
+              {project.description}
+              {project.highlight && <div><br/><b>{project.highlight}</b></div>}
+            </div>
           </div>
         </div>
         <footer className="card-footer">
@@ -121,16 +129,20 @@ class App extends Component {
 
   getExperience = () => {
     return (
-      <div style={{textAlign: 'left', margin: 25}}>
+      <div style={{textAlign: 'center', margin: 25}}>
         {
           experience_list.map((experience) => {
-            return <div style={{marginTop: "2.5vh"}}>
-              <i>{experience.dates}</i><br/>
-              <b style={{fontSize: "3vh", marginTop: 0}}>{experience.position} @ <a target="_blank" rel="noopener noreferrer" href={experience.company_link}>{experience.company_name}</a></b><br/>
-              {experience.description.map((description) => {
-                return <div style={{marginLeft: 25}}>> {description}</div>
-              })}
-            </div>
+            return (
+              <div style={{marginTop: "2.5vh"}}>
+                <i>{experience.dates}</i><br/>
+
+                <b style={{fontSize: "3vh", marginTop: 0}}>{experience.position} @ <a target="_blank" rel="noopener noreferrer" href={experience.company_link}>{experience.company_name}</a></b><br/>
+                {experience.description.map((description) => {
+                  return <span style={{textAlign: 'left', maxWidth: '80vh', display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>> {description}</span>
+                })}
+                <br/>
+              </div>
+            )
           })
         }
       </div>
@@ -155,12 +167,12 @@ class App extends Component {
                 if (skill.icon) {
                   return (<div style={{marginLeft: 20, marginRight: 20}}>
                     <i className={skill.icon} style={{fontSize: "8vh", opacity: 0.7}}/><br/>
-                    <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
+                    {/*<span style={{fontSize: '1.5vh'}}>{skill.name}</span>*/}
                   </div>)
                 } else {
                   return <div style={{marginLeft: 20, marginRight: 20}}>
                     <img alt={skill.name} src={skill.logo} style={{width: "7.5vh", opacity: 0.7}}/><br/>
-                    <span style={{fontSize: '1.5vh'}}>{skill.name}</span>
+                    {/*<span style={{fontSize: '1.5vh'}}>{skill.name}</span>*/}
                   </div>
                 }
               })
@@ -181,17 +193,42 @@ class App extends Component {
     )
   }
 
+  getAbout = () => {
+    return (
+      <div style={{width: '100%', textAlign: 'center'}}>
+        <span style={{maxWidth: '80vh', textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
+        I'm Kevin. I'm currently a freshman at New York University majoring in Computer Science. 
+        I am passionate about learning new technologies and learning to best use them to make projects that I'm proud of. <br/><br/>
+
+        Before NYU, I was a student at Commonwealth High School, where I gained a deeper appreciation for the non-STEM fields. 
+        I learned about writing with clarity and precision, which is now probably one of the most important things I know.<br/><br/>
+
+        When I'm not working on projects, you can find me making coffee, working out, or fencing.
+        </span>
+      </div>
+    )
+  }
+
   render() {
     return (
-      <div className="App" id="about">
-        <div id="about" style={{minHeight: '100vh'}}>
+      <div className="App" id="main">
+        <div style={{minHeight: '100vh'}}>
           {this.getNavbar()}
-          {this.getAbout()}
+          {this.getMain()}
         </div>
-        <AnchorLink href="#projects">
-          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+        <AnchorLink href="#about">
+          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
+        <div id="about" style={{width: "100%"}}>
+          <div style={{fontSize: '10vh', margin: 30, marginTop: 0, marginBottom: 0}}>
+            <b>About Me</b>
+          </div>
+          {this.getAbout()}<br/>
+          <AnchorLink href="#projects" style={{position: 'relative', bototm: 0}}>
+            <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
+          </AnchorLink>
+        </div>
 
         <div id="projects" style={{width: "100%"}}>
           <div style={{fontSize: '10vh', margin: 30, marginTop: 0, marginBottom: 0}}>
@@ -199,7 +236,7 @@ class App extends Component {
           </div>
           {this.getProjects()}<br/>
           <AnchorLink href="#experience" style={{position: 'relative', bototm: 0}}>
-            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+            <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
           </AnchorLink>
         </div>
 
@@ -210,7 +247,7 @@ class App extends Component {
           </div>
           {this.getExperience()}
           <AnchorLink href="#skills" style={{bottom: "-100vh"}}>
-            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+            <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
           </AnchorLink>
         </div>
 
@@ -220,7 +257,7 @@ class App extends Component {
           </div>
           {this.getSkills()}
           <AnchorLink href="#contact" style={{bottom: "-100vh"}}>
-            <i className="icon fa fa-chevron-down" data-scroll aria-hidden="true"></i>
+            <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
           </AnchorLink>
         </div>
 
