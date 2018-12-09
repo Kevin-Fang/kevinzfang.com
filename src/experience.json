@@ -1,7 +1,7 @@
 [
 	{
 		"company_name": "Curoverse Research",
-		"position": "Data Science Summer Intern",
+		"position": "Data Science Intern",
 		"company_link": "https://curoverse.com",
 		"description": [
 			"Created machine learning classifiers to predict eye color and blood type to 95% accuracy using scikit-learn and TensorFlow",
@@ -23,7 +23,7 @@
 		"location": "Cambridge, MA"
 	},
 	{
-		"company_name": "Tufts Center for Engineering Education and Outreach",
+		"company_name": "Tufts CEEO",
 		"position": "Intern",
 		"company_link": "https://ceeo.tufts.edu",
 		"description": [

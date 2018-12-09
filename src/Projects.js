@@ -58,7 +58,7 @@ export default class ProjectComponent extends Component {
 	render() {
 		return (
 			<div id="projects" style={{width: "100%"}}>
-          		<div style={{fontSize: '4em', margin: 30, marginTop: 0, marginBottom: 0}}>
+          		<div style={{fontSize: '4em', margin: 30, marginTop: 0, marginBottom: 10}}>
             		<b>Projects</b>
           		</div>
           	{this.getProjects()}<br/>

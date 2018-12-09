@@ -12,6 +12,27 @@ import SkillsComponent from './Skills.js'
 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      hovering: null
+    }
+  }
+
+  setHovering = (name) => {
+    this.setState({
+      hovering: name
+    })
+  }
+
+  getOpacity = (name) => {
+    if (this.state.hovering === name) {
+      return 1
+    } else {
+      return 0.5
+    }
+  }
+
   getMain = () => {
     return (
       <div>
@@ -31,20 +52,36 @@ class App extends Component {
           direction="column"
           justify="center">
           <div>
-            <a href="https://github.com/kevin-fang/" target="_blank" rel="noopener noreferrer" >
-              <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: 0.5}}/>
+            <a 
+            onMouseOver={() => {this.setHovering('github')}} 
+            onMouseOut={() => {this.setHovering(null)}} 
+            href="https://github.com/kevin-fang/" 
+            target="_blank" 
+            el="noopener noreferrer" 
+            >
+              <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('github')}}/>
             </a>
-            <a href="https://linkedin.com/in/kevin-fang/" target="_blank" rel="noopener noreferrer" >
-              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '2em', margin: 5, opacity: 0.5}}/>
+            <a 
+            onMouseOver={() => {this.setHovering('linkedin')}} 
+            onMouseOut={() => {this.setHovering(null)}} 
+            href="https://linkedin.com/in/kevin-fang/"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            >
+              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('linkedin')}}/>
             </a>
-            <a href="mailto:kevinzfang@gmail.com">
-              <img alt="Email" src={'./mail.png'} style={{width: '2em', margin: 5, marginTop: 10, opacity: 0.5}}/>
+            <a 
+            href="mailto:kevinzfang@gmail.com"
+            onMouseOver={() => {this.setHovering('email')}} 
+            onMouseOut={() => {this.setHovering(null)}} 
+            >
+              <img alt="Email" src={'./mail.png'} style={{width: '2em', margin: 5, marginTop: 10, opacity: this.getOpacity('email')}}/>
             </a>
           </div>
         </Grid>
         <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
           <span style={{maxWidth: '65vw', fontSize: "1.2em", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
-            Undergrad studying Computer Science,
+            I'm an undergrad studying Computer Science,
             interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
             <span style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</span>
           </span>
@@ -61,7 +98,7 @@ class App extends Component {
             About
           </a>*/}
           <AnchorLink className="navbar-item" href="#about">
-            About
+            About Me
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#experience">
             Experience
@@ -99,35 +136,35 @@ class App extends Component {
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <hr className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <hr className="divider"/>
 
         <AboutComponent />
         <AnchorLink href="#experience" style={{position: 'relative', bottom: 0}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <div className="divider"/>
 
         <ExperienceComponent />
         <AnchorLink href="#projects" style={{position: 'relative', bottom: 0}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <div className="divider"/>
 
         <ProjectsComponent />
         <AnchorLink href="#skills" style={{bottom: "-100vh"}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <div className="divider"/>
 
         <SkillsComponent />
         <AnchorLink href="#contact" style={{bottom: "-100vh"}}>
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <div className="divider"/>
 
         <div id="contact" style={{width: "100%"}}>
           <div style={{fontSize: '4em', marginTop: 0}}>
@@ -135,7 +172,12 @@ class App extends Component {
           </div>
           {this.getContact()}
         </div>
-        <span style={{margin: '5vh'}}>© Kevin Fang, 2018</span><br/>
+        <div className="SideBySide" style={{width: '100%'}}>
+          <div style={{textAlign: 'left', marginRight: 'auto', padding: 20}}>© Kevin Fang, 2018</div>
+          <AnchorLink href="#main" style={{padding: 20}}>
+            Back to Top
+          </AnchorLink>
+          </div>
       </div>
     );
   }
