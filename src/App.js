@@ -83,7 +83,7 @@ class App extends Component {
           <span style={{maxWidth: '65vw', fontSize: "1.2em", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
             I'm an undergrad studying Computer Science,
             interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
-            <span style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</span>
+            <span style={{paddingTop: '2vh'}}>Right now, I'm exploring software engineering and data science.</span>
           </span>
         </div>
       </div>

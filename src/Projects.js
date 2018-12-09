@@ -17,6 +17,9 @@ export default class ProjectComponent extends Component {
 	          justify="center">
 	          {
 	            projects_list.map((project) => {
+	            	if (project.hidden) {
+	            		return null
+	            	}
 	              return <Grid item key={project.name}>{this.makeCard(project)}</Grid>
 	            })
 	          }
@@ -29,15 +32,15 @@ export default class ProjectComponent extends Component {
 	      return null
 	    }
 	    return (
-	      <div className="card" style={{maxWidth: "75vh"}}>
+	      <div className="card" style={{maxWidth: "83vh"}}>
 	        <header className="card-header">
 	          <p className="card-header-title" style={{fontSize: "1.5em"}}>
 	            {project.name}
 	          </p>
 	        </header>
-	        <div className="card-content" style={{minHeight: "70vh"}}>
+	        <div className="card-content" style={{minHeight: "75vh"}}>
 	          <div className="content" style={{textAlign: 'center', lineHeight: '24pt'}}>
-	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '40vh', maxWidth: '40vh'}}/><br/></div>}
+	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '40vh', maxWidth: '50vh'}}/><br/></div>}
 	            <i>{project.summary}</i><br/><br/>
 	            <div style={{textAlign: 'left'}}>
 	              {project.description}
