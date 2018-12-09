@@ -39,24 +39,30 @@ export default class SkillsComponent extends Component {
 	            {
 	              skills.map((skill) => {
 	                if (skill.icon) {
-	                  return (<div style={{marginLeft: 20, marginRight: 20}}>
-	                    <i 
-	                    onMouseOver={() => {this.setHovering(skill.name)}} 
-	                    onMouseOut={() => {this.setHovering(null)}} 
-	                    className={skill.icon} 
-	                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
-	                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
-	                  </div>)
+	                  return (
+	                  	<div 
+	                  	onMouseOver={() => {this.setHovering(skill.name)}} 
+	                  	onMouseOut={() => {this.setHovering(null)}} 
+	                  	style={{marginLeft: 20, marginRight: 20}}>
+		                    <i 
+		                    className={skill.icon} 
+		                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
+		                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
+	                  	</div>
+	                  	)
 	                } else {
-	                  return <div style={{marginLeft: 20, marginRight: 20}}>
-	                    <img 
-	                    onMouseOver={() => {this.setHovering(skill.name)}} 
+	                  return (
+	                  	<div 
+	                  	onMouseOver={() => {this.setHovering(skill.name)}} 
 	                    onMouseOut={() => {this.setHovering(null)}} 
-	                    alt={skill.name} 
-	                    src={skill.logo} 
-	                    style={{height: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
-	                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
-	                  </div>
+	                  	style={{marginLeft: 20, marginRight: 20}}>
+		                    <img 
+		                    alt={skill.name} 
+		                    src={skill.logo} 
+		                    style={{height: "3.3em", opacity: this.getOpacity(skill.name)}}/><br/>
+		                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
+	                  	</div>
+	                  )
 	                }
 	              })
 	            }
