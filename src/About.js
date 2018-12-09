@@ -5,7 +5,7 @@ export default class AboutComponent extends Component {
 	  getAbout = () => {
 	    return (
 	      <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
-	        <span style={{maxWidth: '50vw', fontSize: "2.5vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
+	        <span style={{maxWidth: '65vw', fontSize: "2.5vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
 		        I'm currently a freshman at New York University majoring in Computer Science. 
 		        I am passionate about learning new technologies and learning to best use them to make projects that I'm proud of. <br/><br/>
 

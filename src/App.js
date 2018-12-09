@@ -15,14 +15,14 @@ class App extends Component {
   getMain = () => {
     return (
       <div>
-        <div style={{marginTop: "1vh", fontSize: '10vh'}}>
+        <div style={{marginTop: "1vh", fontSize: '10%', width: '100%'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
             <span className="Name">Hi! I'm Kevin Fang.</span>
           </Typist>
         </div>
         <img
           alt="headshot"
-          style={{width: '40vh', marginTop: 10}}
+          style={{maxWidth: '40vh', maxHeight: '40vh', marginTop: 10}}
           src={'./headshot.png'}
         />
         <Grid
