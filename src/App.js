@@ -15,14 +15,14 @@ class App extends Component {
   getMain = () => {
     return (
       <div>
-        <div style={{marginTop: "1vh", fontSize: '10%', width: '100%'}}>
+        <div style={{fontSize: '4em', width: '100%'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
             <span className="Name">Hi! I'm Kevin Fang.</span>
           </Typist>
         </div>
         <img
           alt="headshot"
-          style={{maxWidth: '40vh', maxHeight: '40vh', marginTop: 10}}
+          style={{maxHeight: '16em', marginTop: 10}}
           src={'./headshot.png'}
         />
         <Grid
@@ -32,18 +32,18 @@ class App extends Component {
           justify="center">
           <div>
             <a href="https://github.com/kevin-fang/" target="_blank" rel="noopener noreferrer" >
-              <img alt="GitHub" src={'./github.png'} style={{width: '4vh', margin: 5, opacity: 0.5}}/>
+              <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: 0.5}}/>
             </a>
             <a href="https://linkedin.com/in/kevin-fang/" target="_blank" rel="noopener noreferrer" >
-              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '4vh', margin: 5, opacity: 0.5}}/>
+              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '2em', margin: 5, opacity: 0.5}}/>
             </a>
             <a href="mailto:kevinzfang@gmail.com">
-              <img alt="Email" src={'./mail.png'} style={{width: '4vh', margin: 5, marginTop: 10, opacity: 0.5}}/>
+              <img alt="Email" src={'./mail.png'} style={{width: '2em', margin: 5, marginTop: 10, opacity: 0.5}}/>
             </a>
           </div>
         </Grid>
         <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
-          <span style={{maxWidth: '65vw', fontSize: "3vh", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
+          <span style={{maxWidth: '65vw', fontSize: "1.2em", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
             Undergrad studying Computer Science,
             interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
             <span style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</span>
@@ -83,7 +83,7 @@ class App extends Component {
   getContact = () => {
     return (
       <div style={{marginBottom: "4vh", margin: 20}}>
-        <span style={{maxWidth: '75vw', fontSize: "3vh", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
+        <span style={{maxWidth: '75vw', fontSize: "1.2em", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
       </div>
     )
   }
@@ -91,12 +91,12 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="main">
-        <div style={{minHeight: '100vh'}}>
+        <div style={{minHeight: '93vh'}}>
           {this.getNavbar()}
           {this.getMain()}
         </div>
-        <AnchorLink href="#about">
-          <i style={{position: 'absolute', bottom: 5}} className="icon fa fa-chevron-down" aria-hidden="true"></i>
+        <AnchorLink href="#about" style={{position: 'relative', bottom: 0}}>
+          <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
         <hr className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
@@ -127,10 +127,10 @@ class App extends Component {
           <i className="icon fa fa-chevron-down" aria-hidden="true"></i>
         </AnchorLink>
 
-        <div className="divider" style={{maxWidth: '50vh', marginLeft: 'auto', marginRight: 'auto'}}/>
+        <div className="divider" style={{maxWidth: '50vw', marginLeft: 'auto', marginRight: 'auto'}}/>
 
         <div id="contact" style={{width: "100%"}}>
-          <div style={{fontSize: '8vh', marginTop: 0}}>
+          <div style={{fontSize: '4em', marginTop: 0}}>
             Want to get in touch?
           </div>
           {this.getContact()}

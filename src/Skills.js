@@ -34,7 +34,7 @@ export default class SkillsComponent extends Component {
   	createSkillsRow = (skillType, skills) => {
 	    return (
 	      <div>
-	        <span style={{fontSize: '2.5vh'}}>{skillType}</span><br/><br/>
+	        <span style={{fontSize: '1.2em'}}>{skillType}</span><br/><br/>
 	          <div className="SideBySide" style={{flexWrap: 'wrap'}}>
 	            {
 	              skills.map((skill) => {
@@ -44,8 +44,8 @@ export default class SkillsComponent extends Component {
 	                    onMouseOver={() => {this.setHovering(skill.name)}} 
 	                    onMouseOut={() => {this.setHovering(null)}} 
 	                    className={skill.icon} 
-	                    style={{fontSize: "8vh", opacity: this.getOpacity(skill.name)}}/><br/>
-	                    <span style={{fontSize: '2vh', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
+	                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
+	                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
 	                  </div>)
 	                } else {
 	                  return <div style={{marginLeft: 20, marginRight: 20}}>
@@ -54,8 +54,8 @@ export default class SkillsComponent extends Component {
 	                    onMouseOut={() => {this.setHovering(null)}} 
 	                    alt={skill.name} 
 	                    src={skill.logo} 
-	                    style={{height: "7.5vh", opacity: this.getOpacity(skill.name)}}/><br/>
-	                    <span style={{fontSize: '2vh', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
+	                    style={{height: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
+	                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
 	                  </div>
 	                }
 	              })
@@ -78,7 +78,7 @@ export default class SkillsComponent extends Component {
 	render() {
 		return (
 			<div id="skills" style={{width: '100%'}}>
-	          <div style={{fontSize: '10vh', marginTop: 0}}>
+	          <div style={{fontSize: '4em', marginTop: 0}}>
 	            <b>Skills</b>
 	          </div>
 	          {this.getSkills()}

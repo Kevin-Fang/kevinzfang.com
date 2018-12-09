@@ -31,7 +31,7 @@ export default class ProjectComponent extends Component {
 	    return (
 	      <div className="card" style={{maxWidth: "75vh"}}>
 	        <header className="card-header">
-	          <p className="card-header-title" style={{fontSize: "2.5vh"}}>
+	          <p className="card-header-title" style={{fontSize: "1.5em"}}>
 	            {project.name}
 	          </p>
 	        </header>
@@ -58,7 +58,7 @@ export default class ProjectComponent extends Component {
 	render() {
 		return (
 			<div id="projects" style={{width: "100%"}}>
-          		<div style={{fontSize: '10vh', margin: 30, marginTop: 0, marginBottom: 0}}>
+          		<div style={{fontSize: '4em', margin: 30, marginTop: 0, marginBottom: 0}}>
             		<b>Projects</b>
           		</div>
           	{this.getProjects()}<br/>
