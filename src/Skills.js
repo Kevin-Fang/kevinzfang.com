@@ -23,6 +23,14 @@ export default class SkillsComponent extends Component {
 		})
 	}
 
+	getOpacity = (name) => {
+		if (this.state.hovering == name) {
+			return 1
+		} else {
+			return 0.6
+		}
+	}
+
   	createSkillsRow = (skillType, skills) => {
 	    return (
 	      <div>
@@ -32,12 +40,21 @@ export default class SkillsComponent extends Component {
 	              skills.map((skill) => {
 	                if (skill.icon) {
 	                  return (<div style={{marginLeft: 20, marginRight: 20}}>
-	                    <i onMouseOver={() => {this.setHovering(skill.name)}} className={skill.icon} style={{fontSize: "8vh", opacity: 0.7}}/><br/>
+	                    <i 
+	                    onMouseOver={() => {this.setHovering(skill.name)}} 
+	                    onMouseOut={() => {this.setHovering(null)}} 
+	                    className={skill.icon} 
+	                    style={{fontSize: "8vh", opacity: this.getOpacity(skill.name)}}/><br/>
 	                    <span style={{fontSize: '1.5vh', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
 	                  </div>)
 	                } else {
 	                  return <div style={{marginLeft: 20, marginRight: 20}}>
-	                    <img onMouseOver={() => {this.setHovering(skill.name)}} alt={skill.name} src={skill.logo} style={{width: "7.5vh", opacity: 0.7}}/><br/>
+	                    <img 
+	                    onMouseOver={() => {this.setHovering(skill.name)}} 
+	                    onMouseOut={() => {this.setHovering(null)}} 
+	                    alt={skill.name} 
+	                    src={skill.logo} 
+	                    style={{width: "7.5vh", opacity: this.getOpacity(skill.name)}}/><br/>
 	                    <span style={{fontSize: '1.5vh', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
 	                  </div>
 	                }

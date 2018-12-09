@@ -60,13 +60,13 @@
       "summary": "An Aristotelian logic system, implemented in C",
       "priority":2,
       "github":"https://github.com/kevin-fang/logical-inference",
-      "description":"I created a logic system that allowed users to make assertions such as 'all humans are mammals' and 'all mammals are warm-blooded.' After the user makes the assertions, the system will then solve logical queries, such as 'are all humans warm-blooded?'"
+      "description":"I created a logic system that allowed users to make assertions such as 'all humans are mammals' and 'all mammals are warm-blooded.' After the user makes assertions, the system will then solve logical queries, such as 'are all humans warm-blooded?'"
    },
    {  
       "name":"FenceMe Fencing Scorekeeper",
       "image":"https://raw.githubusercontent.com/kevin-fang/FenceMe-Scorekeeper/master/graphics/score-listing-screenshots/timing.png",
       "link":"",
-      "summary": "An elegant and easy Android app developed to keep track of fencing matches",
+      "summary": "An elegant Android app to keep track of fencing matches",
       "priority":2,
       "github":"https://github.com/kevin-fang/FenceMe-Scorekeeper",
       "description":"I was looking for easier ways for referees to score fencing matches, but I found that many of the existing apps on the Google Play Store were quite outdated, or not aesthetically pleasing. So I created my own, called FenceMe Fencing Scorekeeper using Java, Kotlin, and RxJava."

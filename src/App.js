@@ -17,7 +17,7 @@ class App extends Component {
       <div>
         <div style={{marginTop: "1vh", fontSize: '10vh'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
-            <span className="Name">Hi! I'm Kevin Fang!</span>
+            <span className="Name">Hi! I'm Kevin Fang.</span>
           </Typist>
         </div>
         <img
@@ -43,7 +43,7 @@ class App extends Component {
           </div>
         </Grid>
         <div style={{fontSize: '3vh', marginTop: '2vh'}}>
-          I'm currently an undergrad studying Computer Science,<br/>
+          Undergrad studying Computer Science,<br/>
           interested in Machine Learning/AI, bioinformatics, and financial markets.<br/>
           <div style={{paddingTop: '2vh'}}>Exploring software engineering and data science.</div>
         </div>
