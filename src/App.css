@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Source Serif Pro', serif;*/
 }
 
 .SideBySide {
@@ -18,8 +19,14 @@
   margin-right: auto;
 }
 
+.About {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .Name {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  /*font-weight: bold;*/
 }
 
 .Content {

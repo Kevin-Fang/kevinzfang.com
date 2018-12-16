@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from '@material-ui/core/Fade'
 let skills = require('./skills.json')
 
 export default class SkillsComponent extends Component {
@@ -11,9 +12,9 @@ export default class SkillsComponent extends Component {
 
 	getVisibility = (name) => {
 		if (this.state.hovering === name) {
-			return 'visible'
+			return true
 		} else {
-			return 'hidden'
+			return false
 		}
 	}
 
@@ -47,7 +48,9 @@ export default class SkillsComponent extends Component {
 		                    <i 
 		                    className={skill.icon} 
 		                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
-		                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
+		                    <Fade timeout={100} in={this.getVisibility(skill.name)}>
+		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
+	                    	</Fade>
 	                  	</div>
 	                  	)
 	                } else {
@@ -60,8 +63,10 @@ export default class SkillsComponent extends Component {
 		                    alt={skill.name} 
 		                    src={skill.logo} 
 		                    style={{height: "3.3em", opacity: this.getOpacity(skill.name)}}/><br/>
-		                    <span style={{fontSize: '.8em', visibility: this.getVisibility(skill.name)}}>{skill.name}</span>
-	                  	</div>
+							<Fade timeout={100} in={this.getVisibility(skill.name)}>
+		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
+	                    	</Fade>	                  	
+                    	</div>
 	                  )
 	                }
 	              })

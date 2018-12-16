@@ -16,7 +16,7 @@
 		"position": "Biomechatronics Intern",
 		"company_link": "https://media.mit.edu/groups/biomechatronics/overview",
 		"description": [
-			"Developed high throughput compute cluster for finite element modeling of prosthetic limb designed that increased computation speed by over 60%",
+			"Developed high throughput compute cluster for finite element modeling of prosthetic limb designs that increased computation speed by over 60%",
 			"Automated job management and submission using custom Python scripts"
 		],
 		"dates": "March 2018",

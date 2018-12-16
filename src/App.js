@@ -35,7 +35,7 @@ class App extends Component {
 
   getMain = () => {
     return (
-      <div>
+      <div className="About">
         <div style={{fontSize: '4em', width: '100%'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
             <span className="Name">Hi! I'm Kevin Fang.</span>
@@ -57,7 +57,7 @@ class App extends Component {
             onMouseOut={() => {this.setHovering(null)}} 
             href="https://github.com/kevin-fang/" 
             target="_blank" 
-            el="noopener noreferrer" 
+            rel="noopener noreferrer" 
             >
               <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('github')}}/>
             </a>

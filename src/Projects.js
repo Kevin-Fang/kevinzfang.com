@@ -40,7 +40,7 @@ export default class ProjectComponent extends Component {
 	        </header>
 	        <div className="card-content" style={{minHeight: "75vh"}}>
 	          <div className="content" style={{textAlign: 'center', lineHeight: '24pt'}}>
-	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '40vh', maxWidth: '50vh'}}/><br/></div>}
+	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '20em', maxWidth: '50vh'}}/><br/></div>}
 	            <i>{project.summary}</i><br/><br/>
 	            <div style={{textAlign: 'left'}}>
 	              {project.description}

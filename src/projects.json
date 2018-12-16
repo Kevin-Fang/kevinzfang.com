@@ -42,7 +42,7 @@
       "link":"https://solanumti.me",
       "github":"http://github.com/kevin-fang/solanum",
       "priority":3,
-      "description":"A small side-project of mine: I couldn't find many well-designed Pomodoro timers online, so I decided to make my own, using React.js, material-ui, and odometer.js."
+      "description":"A small side-project of mine: I couldn't find many well-designed Pomodoro timers online, so I decided to make my own using React.js, material-ui, and odometer.js."
    },
    {  
       "name":"Climate Sentiment",
