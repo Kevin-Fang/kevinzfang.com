@@ -44,11 +44,13 @@ export default class SkillsComponent extends Component {
 	                  	<div 
 	                  	onMouseOver={() => {this.setHovering(skill.name)}} 
 	                  	onMouseOut={() => {this.setHovering(null)}} 
+	                  	onTouchStart={() => {this.setHovering(skill.name)}} 
+	                  	onTouchEnd={() => {this.setHovering(null)}} 
 	                  	style={{marginLeft: 20, marginRight: 20}}>
 		                    <i 
 		                    className={skill.icon} 
 		                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
-		                    <Fade timeout={100} in={this.getVisibility(skill.name)}>
+		                    <Fade timeout={200} in={this.getVisibility(skill.name)}>
 		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
 	                    	</Fade>
 	                  	</div>
@@ -57,13 +59,15 @@ export default class SkillsComponent extends Component {
 	                  return (
 	                  	<div 
 	                  	onMouseOver={() => {this.setHovering(skill.name)}} 
-	                    onMouseOut={() => {this.setHovering(null)}} 
+	                  	onMouseOut={() => {this.setHovering(null)}} 
+	                  	onTouchStart={() => {this.setHovering(skill.name)}} 
+	                  	onTouchEnd={() => {this.setHovering(null)}} 
 	                  	style={{marginLeft: 20, marginRight: 20}}>
 		                    <img 
 		                    alt={skill.name} 
 		                    src={skill.logo} 
 		                    style={{height: "3.3em", opacity: this.getOpacity(skill.name)}}/><br/>
-							<Fade timeout={100} in={this.getVisibility(skill.name)}>
+							<Fade timeout={200} in={this.getVisibility(skill.name)}>
 		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
 	                    	</Fade>	                  	
                     	</div>

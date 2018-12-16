@@ -32,15 +32,15 @@ export default class ProjectComponent extends Component {
 	      return null
 	    }
 	    return (
-	      <div className="card" style={{maxWidth: "83vh"}}>
+	      <div className="card" style={{margin: 10, minWidth: "40vw", maxWidth: '75vw'}}>
 	        <header className="card-header">
 	          <p className="card-header-title" style={{fontSize: "1.5em"}}>
 	            {project.name}
 	          </p>
 	        </header>
-	        <div className="card-content" style={{minHeight: "75vh"}}>
+	        <div className="card-content" style={{}}>
 	          <div className="content" style={{textAlign: 'center', lineHeight: '24pt'}}>
-	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '20em', maxWidth: '50vh'}}/><br/></div>}
+	            {project.image && <div><img src={project.image} alt={project.name} style={{maxHeight: '20em', maxWidth: '60vw', marginLeft: 'auto', marginRight: 'auto'}}/><br/></div>}
 	            <i>{project.summary}</i><br/><br/>
 	            <div style={{textAlign: 'left'}}>
 	              {project.description}
