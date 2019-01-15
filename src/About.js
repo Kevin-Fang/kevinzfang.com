@@ -12,7 +12,7 @@ export default class AboutComponent extends Component {
 		        Before NYU, I was a student at Commonwealth High School, where I gained a deeper appreciation for the non-STEM fields. 
 		        I learned about writing with clarity and precision, which is now probably one of the most important things I know.<br/><br/>
 
-		        When I'm not working on my own projects, you'll probably find me making coffee, working out, or practicing piano.
+		        When I'm not working on my own projects, you'll probably find me at a hackathon, making coffee, working out, or practicing piano.
 	        </span>
 	      </div>
 	    )

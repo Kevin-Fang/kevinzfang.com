@@ -49,7 +49,7 @@ export default class SkillsComponent extends Component {
 	                  	style={{marginLeft: 20, marginRight: 20}}>
 		                    <i 
 		                    className={skill.icon} 
-		                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name)}}/><br/>
+		                    style={{fontSize: "3.6em", opacity: this.getOpacity(skill.name), transition: "opacity .2s"}}/><br/>
 		                    <Fade timeout={200} in={this.getVisibility(skill.name)}>
 		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
 	                    	</Fade>
@@ -66,7 +66,7 @@ export default class SkillsComponent extends Component {
 		                    <img 
 		                    alt={skill.name} 
 		                    src={skill.logo} 
-		                    style={{height: "3.3em", opacity: this.getOpacity(skill.name)}}/><br/>
+		                    style={{height: "3.3em", opacity: this.getOpacity(skill.name), transition: "opacity .2s"}}/><br/>
 							<Fade timeout={200} in={this.getVisibility(skill.name)}>
 		                    	<span style={{fontSize: '.8em'}}>{skill.name}</span>
 	                    	</Fade>	                  	

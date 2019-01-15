@@ -41,14 +41,6 @@
    ],
    "web":[  
       {  
-         "name":"HTML",
-         "icon":"devicon-html5-plain colored"
-      },
-      {  
-         "name":"CSS",
-         "icon":"devicon-css3-plain colored"
-      },
-      {  
          "name":"React.js",
          "icon":"devicon-react-plain colored"
       },
@@ -59,6 +51,14 @@
       {  
          "name":"Node.js",
          "icon":"devicon-nodejs-plain colored"
+      },
+      {  
+         "name":"HTML",
+         "icon":"devicon-html5-plain colored"
+      },
+      {  
+         "name":"CSS",
+         "icon":"devicon-css3-plain colored"
       }
    ],
    "misc":[  

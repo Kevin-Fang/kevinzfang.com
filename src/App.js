@@ -38,12 +38,12 @@ class App extends Component {
       <div className="About">
         <div style={{fontSize: '4em', width: '100%'}}>
           <Typist avgTypingDelay={100} stdTypingDelay={25} cursor={{show: true}} blink={true}>
-            <span className="Name">Hi! I'm Kevin Fang.</span>
+            <span className="Name">Kevin Fang</span>
           </Typist>
         </div>
         <img
           alt="headshot"
-          style={{maxHeight: '16em', marginTop: 10}}
+          style={{maxHeight: '30vh', marginTop: 10}}
           src={'./headshot.png'}
         />
         <Grid
@@ -59,7 +59,7 @@ class App extends Component {
             target="_blank" 
             rel="noopener noreferrer" 
             >
-              <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('github')}}/>
+              <img alt="GitHub" src={'./github.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('github'), transition: "opacity .2s"}}/>
             </a>
             <a 
             onMouseOver={() => {this.setHovering('linkedin')}} 
@@ -68,22 +68,21 @@ class App extends Component {
             target="_blank" 
             rel="noopener noreferrer" 
             >
-              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('linkedin')}}/>
+              <img alt="LinkedIn" src={'./linkedin.png'} style={{width: '2em', margin: 5, opacity: this.getOpacity('linkedin'), transition: "opacity .2s"}}/>
             </a>
             <a 
             href="mailto:kevinzfang@gmail.com"
             onMouseOver={() => {this.setHovering('email')}} 
             onMouseOut={() => {this.setHovering(null)}} 
             >
-              <img alt="Email" src={'./mail.png'} style={{width: '2em', margin: 5, marginTop: 10, opacity: this.getOpacity('email')}}/>
+              <img alt="Email" src={'./mail.png'} style={{width: '2em', margin: 5, marginTop: 10, opacity: this.getOpacity('email'), transition: "opacity .2s"}}/>
             </a>
           </div>
         </Grid>
         <div style={{maxWidth: '100%', textAlign: 'center', margin: 20}}>
           <span style={{maxWidth: '65vw', fontSize: "1.2em", textAlign: 'left', display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>
-            I'm an undergrad studying Computer Science,
-            interested in Machine Learning/AI, bioinformatics, and financial markets.<br/><br/>
-            <span style={{paddingTop: '2vh'}}>Right now, I'm exploring software engineering and data science.</span>
+            Hi, I'm Kevin!<br/><br/> I'm a developer and an undergrad studying Computer Science, interested in machine learning and its applications to bioinformatics, financial markets, and other fields.<br/><br/>
+            I love technology and learning new things. Currently, I'm exploring software engineering and data science. For the past few years, I've been working with <a href="https://curoverse.com">Curoverse Research</a> to help us understand the human genome better.
           </span>
         </div>
       </div>
