@@ -9,6 +9,15 @@
       "description":"For my final, independent CS project in high school, I used policy gradients to train a neural net to play Flappy Bird. The neural net read the state of a Flappy Bird game and would predict the optimal move (jump or fall). After a few hundred iterations of training, the AI was able to play Flappy Bird without failing."
    },
    {  
+      "name":"DearAI [PennApps XIX - Top 5, Best Entertainment Hack]",
+      "image":"./dearai.png",
+      "link":"https://devpost.com/software/dear-ai",
+      "priority":1.3,
+      "github":"https://github.com/kevin-fang/dear-ai",
+      "summary": "Combating depression through suggestions and recommendations, one journal entry at a time.",
+      "description":"Since many teenagers do not actively seek out support for potential mental health issues (either due to financial or personal reasons), we built an app that integrates daily journaling with sentiment analysis software, to inform teens about their emotions using machine learning and IBM Watson's Tone Analyzer API. Based on the resultant data, we recommend to them activities designed to improve their well-being."
+   },
+   {  
       "name":"simplif.ai [YHack 2018]",
       "image":"./simplifai.png",
       "link":"https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/05d960f/submission/",
@@ -18,7 +27,7 @@
       "description":"To make research and legal writing more accessible, at YHack 2018 we created an application that would serve as an AI 'companion' for writers, providing feedback as to whether sentences would be overly complicated or difficult to understand. We trained three different classifiers: a custom recurrent neural net, a Google Cloud AutoML natural language classifier, and a Markov Chain using Wolfram Classify, and achieved over 80% accuracy."
    },
    {  
-      "name":"PillUp [HopHacks 2018 1st Place Winner]",
+      "name":"PillUp [HopHacks 2018 - 1st Place Winner]",
       "image":"./pillup.jpg",
       "link":"https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
       "priority":1,
@@ -27,11 +36,11 @@
       "description":"At HopHacks 2018, we created a robotic pill dispenser to simplify the daily routine of taking different medicines. We created a physical device using servo motors to dispense medicine, a React.js-based web frontend for physicians to monitor patient statuses, and an iOS mobile client for patients to easily dispense their medicine in the morning."
    },
    {  
-      "name":"Relief Mesh [Best Hack For Building Communities]",
+      "name":"Relief Mesh [HackHarvard - Best Hack For Building Communities]",
       "image":"./reliefmesh.jpg",
       "link":"https://devpost.com/software/relief-mesh-zhp5yu",
       "priority":2,
-      "summary": "HackHarvard 2018 - Mesh network to help disaster relief",
+      "summary": "Mesh network to help disaster relief",
       "github":"https://github.com/kevin-fang/relief-mesh",
       "description":"After seeing the damage caused by hurricane Florence, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet."
    },
