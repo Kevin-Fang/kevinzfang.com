@@ -91,12 +91,11 @@ class App extends Component {
   }
 
   getNavbar = () => {
+    // returns navigation bar
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div style={{position: 'absolute', right: 0, margin: 10}} id="navbarBasicExample" className="navbar-menu">
-          {/*<a className="navbar-item" href="#about">
-            About
-          </a>*/}
+          
           <AnchorLink className="navbar-item" href="#about">
             About Me
           </AnchorLink>
@@ -112,12 +111,16 @@ class App extends Component {
           <AnchorLink className="navbar-item" href="#contact">
             Contact
           </AnchorLink>
+          <a className="navbar-item" target="_blank" rel="noopener noreferrer" href="./resume.pdf">
+            Resume
+          </a>
         </div>
       </nav>
     )
   }
 
   getContact = () => {
+    // returns contact information
     return (
       <div style={{marginBottom: "4vh", margin: 20}}>
         <span style={{maxWidth: '75vw', fontSize: "1.2em", display: 'block', marginLeft: 'auto', marginRight: 'auto', lineHeight: '24pt'}}>Feel free to write to me at <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!</span>
