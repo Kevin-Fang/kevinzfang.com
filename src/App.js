@@ -160,7 +160,7 @@ class App extends Component {
             <br />
             <br />I love technology and learning new things. Currently, I'm
             exploring software engineering and data science. For the past few
-            years, I've been working with{' '}
+            years, I've been working with
             <a href="https://curoverse.com">Curoverse Research</a> to help us
             understand the human genome better.
           </span>
@@ -197,7 +197,7 @@ class App extends Component {
             className="navbar-item"
             target="_blank"
             rel="noopener noreferrer"
-            href="./resume.pdf"
+            href="https://kevinzfang.com/resume.pdf"
           >
             Resume
           </a>
