@@ -8,25 +8,29 @@ export default class AboutComponent extends Component {
           style={{
             maxWidth: '65vw',
             fontSize: '1.2em',
-            textAlign: 'left',
+            textAlign: 'justify',
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
             lineHeight: '24pt'
           }}
         >
-          I'm currently a freshman at New York University majoring in Computer
-          Science. I am passionate about exploring new technologies and learning
-          to best use them for projects that I'm proud of. <br />
+          I'm currently a sophomore at Duke University majoring in Computer
+          Science with a concentration in Data Science. I am passionate about
+          exploring new technologies and learning to best use them to build
+          innovative projects.
           <br />
-          Before NYU, I was a student at Commonwealth High School, where I
-          gained a deeper appreciation for the non-STEM fields. I learned about
-          writing with clarity and precision, which is now probably one of the
-          most important things I know.
+          <br />
+          I transferred to Duke as a rising sophomore in CS. Before that, I was
+          a student at the New York University School of Engineering, and before
+          that, I was a student at Commonwealth High School, where I gained a
+          deeper appreciation for the non-STEM fields. I learned about writing
+          with clarity and precision, which is now probably one of the most
+          important things I know.
           <br />
           <br />
           When I'm not working on my own projects, you'll probably find me at a
-          hackathon, making coffee, working out, or practicing piano.
+          hackathon, at the gym, making coffee, or practicing piano.
         </span>
       </div>
     );

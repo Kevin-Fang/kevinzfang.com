@@ -15,6 +15,7 @@
     "react-dom": "^16.6.3",
     "react-scripts": "^2.1.3",
     "react-typist": "^2.0.4",
+    "react-typist-loop": "0.0.5",
     "sweet-scroll": "^3.0.1"
   },
   "homepage": "https://kevinzfang.com",
@@ -29,14 +30,14 @@
     "extends": "react-app"
   },
   "husky": {
-  	"hooks": {
-  		"pre-commit": "lint-staged"
-  	}
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-     "prettier --single-quote --write",
-     "git add"
+      "prettier --single-quote --write",
+      "git add"
     ]
   },
   "browserslist": [

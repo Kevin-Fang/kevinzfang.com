@@ -67,7 +67,7 @@ export default class ProjectComponent extends Component {
             <i>{project.summary}</i>
             <br />
             <br />
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'justify' }}>
               {project.description}
               {project.highlight && (
                 <div>

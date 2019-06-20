@@ -37,7 +37,7 @@ export default class ExperienceComponent extends Component {
                 return (
                   <span
                     style={{
-                      textAlign: 'left',
+                      textAlign: 'justify',
                       maxWidth: '65vw',
                       display: 'block',
                       marginLeft: 'auto',

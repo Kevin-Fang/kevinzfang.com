@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Typist from 'react-typist';
+import TypistLoop from 'react-typist-loop';
 import Grid from '@material-ui/core/Grid';
 import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css';
@@ -53,14 +54,25 @@ class App extends Component {
       <div className="About">
         <div className="fade-in">
           <div style={{ fontSize: '3em', width: '100%' }}>
-            <Typist
-              avgTypingDelay={100}
-              stdTypingDelay={25}
-              cursor={{ show: true }}
-              blink={true}
-            >
-              <span className="Name">Kevin Fang</span>
-            </Typist>
+            <TypistLoop interval={100}>
+              {[
+                'Kevin Fang',
+                'Computer Science Student',
+                'Software Developer',
+                'Data Scientist'
+              ].map(text => (
+                <Typist
+                  repeat
+                  avgTypingDelay={100}
+                  key={text}
+                  stdTypingDelay={25}
+                  cursor={{ show: true, blink: true }}
+                >
+                  <span className="Name">{text}</span>
+                  <Typist.Backspace count={25} delay={1500} />
+                </Typist>
+              ))}
+            </TypistLoop>
           </div>
           <img
             alt="headshot"
@@ -145,7 +157,7 @@ class App extends Component {
             style={{
               maxWidth: '65vw',
               fontSize: '1.2em',
-              textAlign: 'left',
+              textAlign: 'justify',
               display: 'block',
               marginLeft: 'auto',
               marginRight: 'auto',
@@ -162,7 +174,9 @@ class App extends Component {
             exploring software engineering and data science. For the past few
             years, I've been working with{' '}
             <a href="https://curoverse.com">Curoverse Research</a> to help us
-            understand the human genome better.
+            understand the human genome better. Now, I'm working at{' '}
+            <a href="https://www.intralinks.com">Intralinks</a> as an intern on
+            the innovation team.
           </span>
         </div>
       </div>
@@ -283,12 +297,26 @@ class App extends Component {
           {this.getContact()}
         </div>
         <div className="SideBySide" style={{ width: '100%' }}>
-          <div style={{ textAlign: 'left', marginRight: 'auto', padding: 20 }}>
-            © Kevin Fang, 2018
+          <div style={{ marginRight: 'auto', padding: 20 }}>
+            © Kevin Fang, 2019
           </div>
-          <AnchorLink href="#main" style={{ padding: 20 }}>
+          <AnchorLink
+            href="#main"
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              padding: 20,
+              textAlign: 'center'
+            }}
+          >
             Back to Top
           </AnchorLink>
+          <a
+            href="https://github.com/kevin-fang/kevinzfang.com"
+            style={{ marginLeft: 'auto', padding: 20 }}
+          >
+            Website Source Code
+          </a>
         </div>
       </div>
     );

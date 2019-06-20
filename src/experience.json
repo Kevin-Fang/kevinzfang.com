@@ -1,37 +1,48 @@
 [
-	{
-		"company_name": "Curoverse Research",
-		"position": "Data Science Intern",
-		"company_link": "https://curoverse.com",
-		"description": [
-			"Developed reverse gene + rsid searching tool for open-source genome compression software (tiling)",
-			"Created machine learning classifiers to predict eye color and blood type to 95% accuracy using scikit-learn and TensorFlow",
-			"Developed prediction pipelines in Arvados, an open-source bioinformatics platform, using Java and Common Workflow Language (CWL)",
-			"Presented poster on open science and phenotypic analysis at the i2b2/tranSMART symposium to 100+ attendees at Harvard Medical School"
-		],
-		"dates": "June 2016-present",
-		"location": "Somerville, MA"
-	},
-	{
-		"company_name": "MIT Media Lab",
-		"position": "Biomechatronics Intern",
-		"company_link": "https://media.mit.edu/groups/biomechatronics/overview",
-		"description": [
-			"Developed high throughput compute cluster for finite element modeling of prosthetic limb designs that increased computation speed by over 60%",
-			"Automated job management and submission using custom Python scripts"
-		],
-		"dates": "March 2018",
-		"location": "Cambridge, MA"
-	},
-	{
-		"company_name": "Tufts CEEO",
-		"position": "Intern",
-		"company_link": "https://ceeo.tufts.edu",
-		"description": [
-			"Interfaced brain wave reader to drive EV3 robot using Arduino",
-			"Created inventory management system for Tufts CEEO Makerspace using Python scripts and QR codes"
-		],
-		"dates": "July 2015 - August 2015",
-		"location": "Medford, MA"
-	}
+  {
+    "company_name": "Intralinks",
+    "position": "Data Science Intern",
+    "company_link": "https://www.intralinks.com",
+    "description": [
+      "Build Python scripts to scrape relevant news and tweets from the internet using ScraPy",
+      "Create and deploy NLP models to predict possible M&A deals in the future"
+    ],
+    "dates": "May 2019 - present",
+    "location": "Somerville, MA"
+  },
+  {
+    "company_name": "Curoverse Research",
+    "position": "Data Science Intern",
+    "company_link": "https://curoverse.com",
+    "description": [
+      "Developed reverse gene + rsid searching tool for open-source genome compression software (tiling)",
+      "Created machine learning classifiers to predict eye color and blood type to 95% accuracy using scikit-learn and TensorFlow",
+      "Developed prediction pipelines in Arvados, an open-source bioinformatics platform, using Java and Common Workflow Language (CWL)",
+      "Presented poster on open science and phenotypic analysis at the i2b2/tranSMART symposium to 100+ attendees at Harvard Medical School"
+    ],
+    "dates": "June 2016 - January 2019",
+    "location": "Somerville, MA"
+  },
+  {
+    "company_name": "MIT Media Lab",
+    "position": "Biomechatronics Intern",
+    "company_link": "https://media.mit.edu/groups/biomechatronics/overview",
+    "description": [
+      "Developed high throughput compute cluster for finite element modeling of prosthetic limb designs that increased computation speed by over 60%",
+      "Automated job management and submission using custom Python scripts"
+    ],
+    "dates": "March 2018",
+    "location": "Cambridge, MA"
+  },
+  {
+    "company_name": "Tufts CEEO",
+    "position": "Intern",
+    "company_link": "https://ceeo.tufts.edu",
+    "description": [
+      "Interfaced brain wave reader to drive EV3 robot using Arduino",
+      "Created inventory management system for Tufts CEEO Makerspace using Python scripts and QR codes"
+    ],
+    "dates": "July 2015 - August 2015",
+    "location": "Medford, MA"
+  }
 ]
