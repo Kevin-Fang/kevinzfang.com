@@ -95,7 +95,7 @@ class App extends Component {
             >
               <img
                 alt="GitHub"
-                src={'./github.png'}
+                src={'./github.jpg'}
                 style={{
                   width: '2em',
                   margin: 5,
@@ -117,7 +117,7 @@ class App extends Component {
             >
               <img
                 alt="LinkedIn"
-                src={'./linkedin.png'}
+                src={'./linkedin.jpg'}
                 style={{
                   width: '2em',
                   margin: 5,
@@ -137,7 +137,7 @@ class App extends Component {
             >
               <img
                 alt="Email"
-                src={'./mail.png'}
+                src={'./mail.jpg'}
                 style={{
                   width: '2em',
                   margin: 5,

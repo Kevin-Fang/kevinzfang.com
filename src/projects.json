@@ -10,7 +10,7 @@
   },
   {
     "name": "On the Efficacy of Renewable Portfolio Standards",
-    "image": "./datathon_graph.png",
+    "image": "./datathon_graph.jpg",
     "link": "",
     "priority": 1.5,
     "github": "https://github.com/Kevin-Fang/2019-citadel-datathon",
@@ -19,7 +19,7 @@
   },
   {
     "name": "DearAI [PennApps XIX - Top 5, Best Entertainment Hack]",
-    "image": "./dearai.png",
+    "image": "./dearai.jpg",
     "link": "https://devpost.com/software/dear-ai",
     "priority": 1.3,
     "github": "https://github.com/kevin-fang/dear-ai",
@@ -28,7 +28,7 @@
   },
   {
     "name": "simplif.ai [YHack 2018]",
-    "image": "./simplifai.png",
+    "image": "./simplifai.jpg",
     "link": "https://yhack2018.hackerearth.com/sprints/yhack-2018/dashboard/05d960f/submission/",
     "priority": 2,
     "github": "https://github.com/kevin-fang/simplif.ai",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Solanum Time",
-    "image": "./solanum.png",
+    "image": "./solanum.jpg",
     "summary": "A well-designed pomodoro timer",
     "link": "https://solanumti.me",
     "github": "http://github.com/kevin-fang/solanum",
@@ -65,7 +65,7 @@
   },
   {
     "name": "Climate Sentiment",
-    "image": "./climate-sentiment.png",
+    "image": "./climate-sentiment.jpg",
     "link": "https://public.tableau.com/profile/kevin.fang#!/vizhome/DigitalExhibit/ClimateChangeintheMedia",
     "github": "https://github.com/kevin-fang/climate-sentiment",
     "summary": "Sentiment trends towards climate change over the years",
@@ -74,7 +74,7 @@
   },
   {
     "name": "Logical Inference",
-    "image": "./logicalinference.png",
+    "image": "./logicalinference.jpg",
     "link": "",
     "hidden": "true",
     "summary": "An Aristotelian logic system, implemented in C",
@@ -84,7 +84,7 @@
   },
   {
     "name": "FenceMe Fencing Scorekeeper",
-    "image": "https://raw.githubusercontent.com/kevin-fang/FenceMe-Scorekeeper/master/graphics/score-listing-screenshots/timing.png",
+    "image": "https://raw.githubusercontent.com/kevin-fang/FenceMe-Scorekeeper/master/graphics/score-listing-screenshots/timing.jpg",
     "link": "",
     "summary": "An elegant Android app to keep track of fencing matches",
     "priority": 2,

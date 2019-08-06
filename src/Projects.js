@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import LazyLoad from 'react-lazyload';
 let projects_list = require('./projects.json');
 
 projects_list.sort((a, b) => {
@@ -51,16 +52,18 @@ export default class ProjectComponent extends Component {
           >
             {project.image && (
               <div>
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  style={{
-                    maxHeight: '20em',
-                    maxWidth: '40vw',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}
-                />
+                <LazyLoad height={'20em'}>
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    style={{
+                      maxHeight: '20em',
+                      maxWidth: '40vw',
+                      marginLeft: 'auto',
+                      marginRight: 'auto'
+                    }}
+                  />
+                </LazyLoad>
                 <br />
               </div>
             )}
