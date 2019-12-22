@@ -84,11 +84,11 @@
   },
   {
     "name": "FenceMe Fencing Scorekeeper",
-    "image": "https://raw.githubusercontent.com/kevin-fang/FenceMe-Scorekeeper/master/graphics/score-listing-screenshots/timing.jpg",
+    "image": "./fenceme.jpg",
     "link": "",
     "summary": "An elegant Android app to keep track of fencing matches",
     "priority": 2,
     "github": "https://github.com/kevin-fang/FenceMe-Scorekeeper",
-    "description": "I was looking for easier ways for referees to score fencing matches, but I found that many of the existing apps on the Google Play Store were quite outdated, or not aesthetically pleasing. So I created my own, called FenceMe Fencing Scorekeeper using Java, Kotlin, and RxJava."
+    "description": "I was looking for easier ways for referees to score fencing matches, but I found that many of the existing apps on the Google Play Store were quite outdated or unpleasant to use. So I created my own app called FenceMe Fencing Scorekeeper. I built it using Java, Kotlin, and RxJava, and it included features such as timing, keeping track of points, penalties, and tiebreakers."
   }
 ]

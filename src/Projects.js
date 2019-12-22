@@ -116,7 +116,7 @@ export default class ProjectComponent extends Component {
             marginBottom: 10
           }}
         >
-          <b>Projects</b>
+          <b>Selected Projects</b>
         </div>
         {this.getProjects()}
         <br />

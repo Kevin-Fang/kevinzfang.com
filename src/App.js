@@ -157,7 +157,7 @@ class App extends Component {
             style={{
               maxWidth: '65vw',
               fontSize: '1.2em',
-              textAlign: 'justify',
+              textAlign: 'left',
               display: 'block',
               marginLeft: 'auto',
               marginRight: 'auto',
@@ -172,11 +172,17 @@ class App extends Component {
             <br />
             <br />I love technology and learning new things. Currently, I'm
             exploring software engineering and data science. For the past few
-            years, I've been working with{' '}
-            <a href="https://curoverse.com">Curoverse Research</a> to help us
-            understand the human genome better. Now, I'm working at{' '}
-            <a href="https://www.intralinks.com">Intralinks</a> as an intern on
-            the innovation team.
+            years, I've been working with Curoverse Research to help us
+            understand the human genome better.
+            <br />
+            <br />
+            In the summer of 2019, I worked at Intralinks as an intern on the
+            innovation team, building natural language processing pipelines to
+            help streamline customer acquisition.
+            <br />
+            <br />
+            This summer (2020), I will be joining Google's team in Kirkland,
+            Washington as a software engineering intern.
           </span>
         </div>
       </div>
@@ -196,16 +202,16 @@ class App extends Component {
             About Me
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#experience">
-            Experience
+            Professional & Leadership Experience
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#projects">
-            Projects
+            Selected Projects
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#skills">
-            Skills
+            Technical Skills
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#contact">
-            Contact
+            Contact Me
           </AnchorLink>
           <a
             className="navbar-item"
