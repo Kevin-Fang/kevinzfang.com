@@ -60,7 +60,7 @@ export default class ExperienceComponent extends Component {
     return (
       <div id="experience" style={{ width: '100%' }}>
         <div style={{ fontSize: '4em', marginTop: 0 }}>
-          <b>Professional & Leadership Experience</b>
+          <b>Experience</b>
         </div>
         {this.getExperience()}
       </div>

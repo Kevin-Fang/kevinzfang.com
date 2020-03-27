@@ -57,7 +57,7 @@ class App extends Component {
             <TypistLoop interval={100}>
               {[
                 'Kevin Fang',
-                'Computer Science Student',
+                'CS Student',
                 'Software Developer',
                 'Data Scientist'
               ].map(text => (
@@ -181,8 +181,8 @@ class App extends Component {
             help streamline customer acquisition.
             <br />
             <br />
-            This summer (2020), I will be joining Google's team in Kirkland,
-            Washington as a software engineering intern.
+            This summer (2020), I will be joining Google's team as a software
+            engineering intern.
           </span>
         </div>
       </div>
@@ -202,7 +202,7 @@ class App extends Component {
             About Me
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#experience">
-            Professional & Leadership Experience
+            Experience
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#projects">
             Selected Projects
