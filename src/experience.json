@@ -1,15 +1,33 @@
 [
   {
+    "company_name": "Google",
+    "position": "Software Engineering Intern",
+    "company_link": "https://careers.google.com/",
+    "description": [],
+    "dates": "May 2020 - present",
+    "location": "Mountain View, CA (remote)"
+  },
+  {
+    "company_name": "Duke Catalyst Tech Society",
+    "position": "Social Chair",
+    "company_link": "https://www.dukecatalyst.co",
+    "description": [
+      "Plan and host social events for members throughout the summer and school year"
+    ],
+    "dates": "May 2020 - present",
+    "location": "Durham, NC"
+  },
+  {
     "company_name": "Duke Catalyst Tech Society",
     "position": "Professional Chair",
     "company_link": "https://www.dukecatalyst.co",
     "description": [
       "Maintain and build relationships with companies for recruiting",
-      "Mentor students in preparation for the internship and full-time technical recuriting processes",
+      "Mentor students in preparation for the internship and full-time technical recuiting processes",
       "Hold professional development events for students, including technical interview and resume review workshops"
     ],
-    "dates": "January 2019 - present",
-    "location": "Somerville, MA"
+    "dates": "January 2020 - May 2020",
+    "location": "Durham, NC"
   },
   {
     "company_name": "Duke Machine Learning",

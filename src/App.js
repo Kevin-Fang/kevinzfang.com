@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <div className="About">
         <div className="fade-in">
-          <div style={{ fontSize: '3em', width: '100%' }}>
+          <div style={{ fontSize: '2.1em', width: '100%' }}>
             <TypistLoop interval={100}>
               {[
                 'Kevin Fang',
@@ -65,11 +65,11 @@ class App extends Component {
                   repeat
                   avgTypingDelay={100}
                   key={text}
-                  stdTypingDelay={25}
+                  stdTypingDelay={30}
                   cursor={{ show: true, blink: true }}
                 >
                   <span className="Name">{text}</span>
-                  <Typist.Backspace count={25} delay={1500} />
+                  <Typist.Backspace count={text.length} delay={1500} />
                 </Typist>
               ))}
             </TypistLoop>
@@ -164,7 +164,7 @@ class App extends Component {
               lineHeight: '24pt'
             }}
           >
-            Hi, I'm Kevin!
+            Hi, I'm Kevin Fang!
             <br />
             <br /> I'm a developer and an undergrad studying Computer Science,
             interested in machine learning and its applications to
@@ -172,17 +172,15 @@ class App extends Component {
             <br />
             <br />I love technology and learning new things. Currently, I'm
             exploring software engineering and data science. For the past few
-            years, I've been working with Curoverse Research to help us
-            understand the human genome better.
+            years, I've been working with Curoverse Research to help us better
+            understand the human genome.
             <br />
             <br />
             In the summer of 2019, I worked at Intralinks as an intern on the
             innovation team, building natural language processing pipelines to
             help streamline customer acquisition.
             <br />
-            <br />
-            This summer (2020), I will be joining Google's team as a software
-            engineering intern.
+            <br />I am currently a software engineering intern at Google.
           </span>
         </div>
       </div>

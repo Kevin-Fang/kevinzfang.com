@@ -9,7 +9,9 @@ export default class ExperienceComponent extends Component {
         {experience_list.map(experience => {
           return (
             <div style={{ marginTop: '2.5vh' }}>
-              <i>{experience.dates}</i>
+              <i>
+                {experience.dates} | {experience.location}
+              </i>
               <br />
 
               <b
