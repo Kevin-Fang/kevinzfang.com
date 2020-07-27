@@ -13,6 +13,10 @@
       "icon": "devicon-c-plain colored"
     },
     {
+      "name": "C++",
+      "icon": "devicon-cplusplus-plain colored"
+    },
+    {
       "name": "Kotlin",
       "logo": "./kotlin.jpg"
     },
@@ -37,6 +41,10 @@
     {
       "name": "NumPy",
       "logo": "numpy.jpg"
+    },
+    {
+      "name": "Mocha",
+      "icon": "devicon-mocha-plain colored"
     }
   ],
   "web": [
@@ -85,6 +93,10 @@
     {
       "name": "LaTeX",
       "logo": "latex.jpg"
+    },
+    {
+      "name": "Firebase",
+      "logo": "firebase.png"
     }
   ]
 }
