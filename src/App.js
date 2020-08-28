@@ -180,7 +180,12 @@ class App extends Component {
             innovation team, building natural language processing pipelines to
             help streamline customer acquisition.
             <br />
-            <br />I am currently a software engineering intern at Google.
+            <br />I was a software engineering intern at Google during the
+            summer of 2020. There, I worked on the Google Business Messages
+            team, creating tools for company partners to integrate natural
+            language processing into support chatbots.
+            <br />
+            <br />
           </span>
         </div>
       </div>
@@ -255,7 +260,7 @@ class App extends Component {
           {this.getMain()}
         </div>
         <AnchorLink href="#about" style={{ position: 'relative', bottom: 0 }}>
-          <i className="icon fa fa-chevron-down" aria-hidden="true" />
+          <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <hr className="divider" />
@@ -265,7 +270,7 @@ class App extends Component {
           href="#experience"
           style={{ position: 'relative', bottom: 0 }}
         >
-          <i className="icon fa fa-chevron-down" aria-hidden="true" />
+          <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />
@@ -275,21 +280,21 @@ class App extends Component {
           href="#projects"
           style={{ position: 'relative', bottom: 0 }}
         >
-          <i className="icon fa fa-chevron-down" aria-hidden="true" />
+          <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />
 
         <ProjectsComponent mobile={isMobile} />
         <AnchorLink href="#skills" style={{ bottom: '-100vh' }}>
-          <i className="icon fa fa-chevron-down" aria-hidden="true" />
+          <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />
 
         <SkillsComponent />
         <AnchorLink href="#contact" style={{ bottom: '-100vh' }}>
-          <i className="icon fa fa-chevron-down" aria-hidden="true" />
+          <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />

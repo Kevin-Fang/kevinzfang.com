@@ -3,8 +3,13 @@
     "company_name": "Google",
     "position": "Software Engineering Intern",
     "company_link": "https://careers.google.com/",
-    "description": ["Business Messages — G Suite, Google Cloud"],
-    "dates": "May 2020 - present",
+    "description": [
+      "Business Messages — G Suite, Google Cloud Communication Apps Team",
+      "Developed tools for integrating natural language processing features into chat-bots within Google Business Messages, a chat platform within Google Maps",
+      "Integrated database for state tracking and messages to handle thousands of simultaneous connections",
+      "Built EJS and Bootstrap console for company partners to manage agents and message users directly"
+    ],
+    "dates": "May 2020 - Aug 2020",
     "location": "Mountain View, CA (remote)"
   },
   {
