@@ -307,7 +307,7 @@ class App extends Component {
         </div>
         <div className="SideBySide" style={{ width: '100%' }}>
           <div style={{ marginRight: 'auto', padding: 20 }}>
-            © Kevin Fang, 2019
+            © Kevin Fang, 2020
           </div>
           <AnchorLink
             href="#main"
