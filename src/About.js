@@ -15,10 +15,10 @@ export default class AboutComponent extends Component {
             lineHeight: '24pt'
           }}
         >
-          I'm currently a sophomore at Duke University majoring in Computer
-          Science with a concentration in Data Science and a minor in
-          Linguistics. I am passionate about exploring new technologies and
-          learning to best use them to build innovative projects.
+          I'm currently a junior at Duke University majoring in Computer Science
+          with a concentration in Data Science and a minor in Linguistics. I am
+          passionate about exploring new technologies and learning to best use
+          them to build innovative projects.
           <br />
           <br />
           I transferred to Duke as a rising sophomore in CS. Before Duke, I was
