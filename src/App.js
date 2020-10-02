@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import './App.css';
 import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop';
@@ -6,10 +6,11 @@ import Grid from '@material-ui/core/Grid';
 import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import ProjectsComponent from './Projects.js';
-import AboutComponent from './About.js';
-import ExperienceComponent from './Experience.js';
-import SkillsComponent from './Skills.js';
+// import ProjectsComponent from './Projects.js';const ProjectsComponent = lazy(() => import('./Projects.js'))
+const ProjectsComponent = lazy(() => import('./Projects.js'));
+const AboutComponent = lazy(() => import('./About.js'));
+const ExperienceComponent = lazy(() => import('./Experience.js'));
+const SkillsComponent = lazy(() => import('./Skills.js'));
 
 class App extends Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class App extends Component {
   getMain = () => {
     return (
       <div className="About">
-        <div className="fade-in">
+        <div>
           <div style={{ fontSize: '2.1em', width: '100%' }}>
             <TypistLoop interval={100}>
               {[
@@ -81,7 +82,7 @@ class App extends Component {
           />
         </div>
         <Grid container spacing={0} direction="column" justify="center">
-          <div className="fade-in">
+          <div>
             <a
               onMouseOver={() => {
                 this.setHovering('github');
@@ -149,10 +150,7 @@ class App extends Component {
             </a>
           </div>
         </Grid>
-        <div
-          className="fade-in"
-          style={{ maxWidth: '100%', textAlign: 'center', margin: 20 }}
-        >
+        <div style={{ maxWidth: '100%', textAlign: 'center', margin: 20 }}>
           <span
             style={{
               maxWidth: '65vw',
@@ -199,22 +197,22 @@ class App extends Component {
         <div
           style={{ position: 'absolute', right: 0, margin: 10 }}
           id="navbarBasicExample"
-          className="navbar-menu fade-in"
+          className="navbar-menu"
         >
           <AnchorLink className="navbar-item" href="#about">
-            About Me
+            About
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#experience">
             Experience
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#projects">
-            Selected Projects
+            Projects
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#skills">
-            Technical Skills
+            Skills
           </AnchorLink>
           <AnchorLink className="navbar-item" href="#contact">
-            Contact Me
+            Contact
           </AnchorLink>
           <a
             className="navbar-item"
@@ -243,7 +241,7 @@ class App extends Component {
             lineHeight: '24pt'
           }}
         >
-          Feel free to write to me at{' '}
+          Feel free to email me at{' '}
           <a href="mailto:kevinzfang@gmail.com">kevinzfang@gmail.com</a>!
         </span>
       </div>
@@ -265,7 +263,9 @@ class App extends Component {
 
         <hr className="divider" />
 
-        <AboutComponent />
+        <Suspense fallback={<div>Loading...</div>}>
+          <AboutComponent />
+        </Suspense>
         <AnchorLink
           href="#experience"
           style={{ position: 'relative', bottom: 0 }}
@@ -274,8 +274,9 @@ class App extends Component {
         </AnchorLink>
 
         <div className="divider" />
-
-        <ExperienceComponent />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ExperienceComponent />
+        </Suspense>
         <AnchorLink
           href="#projects"
           style={{ position: 'relative', bottom: 0 }}
@@ -284,15 +285,18 @@ class App extends Component {
         </AnchorLink>
 
         <div className="divider" />
-
-        <ProjectsComponent mobile={isMobile} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ProjectsComponent mobile={isMobile} />
+        </Suspense>
         <AnchorLink href="#skills" style={{ bottom: '-100vh' }}>
           <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />
 
-        <SkillsComponent />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SkillsComponent />
+        </Suspense>
         <AnchorLink href="#contact" style={{ bottom: '-100vh' }}>
           <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
@@ -307,7 +311,7 @@ class App extends Component {
         </div>
         <div className="SideBySide" style={{ width: '100%' }}>
           <div style={{ marginRight: 'auto', padding: 20 }}>
-            © Kevin Fang, 2020
+            © Kevin Fang, {new Date().getFullYear()}
           </div>
           <AnchorLink
             href="#main"
