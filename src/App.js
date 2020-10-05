@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Typist from 'react-typist';
 import TypistLoop from 'react-typist-loop';
@@ -7,10 +7,10 @@ import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import ProjectsComponent from './Projects.js';const ProjectsComponent = lazy(() => import('./Projects.js'))
-const ProjectsComponent = lazy(() => import('./Projects.js'));
-const AboutComponent = lazy(() => import('./About.js'));
-const ExperienceComponent = lazy(() => import('./Experience.js'));
-const SkillsComponent = lazy(() => import('./Skills.js'));
+import ProjectsComponent from './Projects.js';
+import AboutComponent from './About.js';
+import ExperienceComponent from './Experience.js';
+import SkillsComponent from './Skills.js';
 
 class App extends Component {
   constructor(props) {
@@ -263,9 +263,7 @@ class App extends Component {
 
         <hr className="divider" />
 
-        <Suspense fallback={<div>Loading...</div>}>
-          <AboutComponent />
-        </Suspense>
+        <AboutComponent />
         <AnchorLink
           href="#experience"
           style={{ position: 'relative', bottom: 0 }}
@@ -274,9 +272,7 @@ class App extends Component {
         </AnchorLink>
 
         <div className="divider" />
-        <Suspense fallback={<div>Loading...</div>}>
-          <ExperienceComponent />
-        </Suspense>
+        <ExperienceComponent />
         <AnchorLink
           href="#projects"
           style={{ position: 'relative', bottom: 0 }}
@@ -285,18 +281,14 @@ class App extends Component {
         </AnchorLink>
 
         <div className="divider" />
-        <Suspense fallback={<div>Loading...</div>}>
-          <ProjectsComponent mobile={isMobile} />
-        </Suspense>
+        <ProjectsComponent mobile={isMobile} />
         <AnchorLink href="#skills" style={{ bottom: '-100vh' }}>
           <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
 
         <div className="divider" />
 
-        <Suspense fallback={<div>Loading...</div>}>
-          <SkillsComponent />
-        </Suspense>
+        <SkillsComponent />
         <AnchorLink href="#contact" style={{ bottom: '-100vh' }}>
           <i className="icon fa fa-chevron-down bounce" aria-hidden="true" />
         </AnchorLink>
