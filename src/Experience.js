@@ -47,7 +47,7 @@ export default class ExperienceComponent extends Component {
                       fontSize: '1em'
                     }}
                   >
-                    > {description}
+                    &gt; {description}
                   </span>
                 );
               })}

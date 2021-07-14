@@ -183,7 +183,8 @@ class App extends Component {
             team, creating tools for company partners to integrate natural
             language processing into support chatbots.
             <br />
-            <br />
+            <br /> I'm currently a software engineering intern at Instagram on
+            the Instagram Ads Delivery and Ranking team.
           </span>
         </div>
       </div>
