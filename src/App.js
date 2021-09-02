@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-// import ProjectsComponent from './Projects.js';const ProjectsComponent = lazy(() => import('./Projects.js'))
+
 import ProjectsComponent from './Projects.js';
 import AboutComponent from './About.js';
 import ExperienceComponent from './Experience.js';
