@@ -87,8 +87,10 @@
     "position": "Biomechatronics Intern",
     "company_link": "https://media.mit.edu/groups/biomechatronics/overview",
     "description": [
-      "Developed high throughput compute cluster for finite element modeling of prosthetic limb designs that increased computation speed by over 60%",
-      "Automated job management and submission using custom Python scripts"
+      "Developed high throughput compute cluster with workload distribution software HTCondor for iterative finite element modeling of prosthetic limb designs",
+      "Increased speed and efficiency of computation by over 60% using containerized solutions in Docker and Ubuntu Linux",
+      "Wrote Python scripts to handle submission of processing jobs across compute cluster",
+      "Parallelized HTCondor workflow across set of old workstations to re-purpose retired machines for math computation"
     ],
     "dates": "March 2018",
     "location": "Cambridge, MA"
