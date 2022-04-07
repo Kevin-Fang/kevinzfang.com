@@ -8,7 +8,7 @@ export default class AboutComponent extends Component {
           style={{
             maxWidth: '800px',
             fontSize: '1.2em',
-            textAlign: 'left',
+            textAlign: 'justify',
             display: 'block',
             marginLeft: 'auto',
             marginRight: 'auto',
@@ -26,7 +26,7 @@ export default class AboutComponent extends Component {
           before that, I was a student at Commonwealth High School, where I
           gained a deeper appreciation for the non-STEM fields. I learned about
           writing with clarity and precision, which is now probably one of the
-          most important things I know.
+          most important skills I know.
           <br />
           <br />
           When I'm not working on my own projects, you'll probably find me at a

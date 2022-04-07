@@ -134,7 +134,7 @@ class App extends Component {
             style={{
               maxWidth: '800px',
               fontSize: '1.2em',
-              textAlign: 'left',
+              textAlign: 'justify',
               display: 'block',
               marginLeft: 'auto',
               marginRight: 'auto',
