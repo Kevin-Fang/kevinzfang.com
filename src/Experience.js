@@ -18,7 +18,7 @@ export default class ExperienceComponent extends Component {
                 style={{
                   fontSize: '2em',
                   marginTop: 0,
-                  maxWidth: '65vw',
+                  maxWidth: '800px',
                   flexWrap: 'wrap',
                   textAlign: 'left',
                   display: 'block',
@@ -40,7 +40,7 @@ export default class ExperienceComponent extends Component {
                   <span
                     style={{
                       textAlign: 'justify',
-                      maxWidth: '65vw',
+                      maxWidth: '800px',
                       display: 'block',
                       marginLeft: 'auto',
                       marginRight: 'auto',

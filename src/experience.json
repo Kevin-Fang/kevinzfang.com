@@ -3,7 +3,13 @@
     "company_name": "Instagram (Facebook)",
     "position": "Software Engineering Intern",
     "company_link": "https://www.facebook.com/careers/",
-    "description": ["Instagram Ads Delivery & Ranking team"],
+    "description": [
+      "Instagram Ads Ranking & Delivery team",
+      "Improved ML-based ad-ranking algorithms to include different factors in ad design as well as user preferences",
+      "Designed & implemented end-to-end platform for ranking engineers to understand impact of different ad features",
+      "Created experiments on different segments of users to determine effectiveness of performance optimizations",
+      "Built recurring data pipelines to query petabyte-scale tables for extracting ads performance signals"
+    ],
     "dates": "June 2021 - Aug 2021",
     "location": "New York, NY (remote)"
   },

@@ -23,6 +23,10 @@
     {
       "name": "Java",
       "icon": "devicon-java-plain colored"
+    },
+    {
+      "name": "SQL",
+      "logo": "sql-server.png"
     }
   ],
   "libraries": [

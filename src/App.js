@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Typist from 'react-typist';
-import TypistLoop from 'react-typist-loop';
 import Grid from '@material-ui/core/Grid';
-import 'react-typist/dist/Typist.css';
 import 'bulma/css/bulma.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -54,26 +51,8 @@ class App extends Component {
     return (
       <div className="About">
         <div>
-          <div style={{ fontSize: '2.1em', width: '100%' }}>
-            <TypistLoop interval={100}>
-              {[
-                'Kevin Fang',
-                'CS Student',
-                'Software Developer',
-                'Data Scientist'
-              ].map(text => (
-                <Typist
-                  repeat
-                  avgTypingDelay={100}
-                  key={text}
-                  stdTypingDelay={30}
-                  cursor={{ show: true, blink: true }}
-                >
-                  <span className="Name">{text}</span>
-                  <Typist.Backspace count={text.length} delay={1500} />
-                </Typist>
-              ))}
-            </TypistLoop>
+          <div style={{ fontSize: '3.5em', width: '100%', fontWeight: "bold" }}>
+            Hi, I'm Kevin.
           </div>
           <img
             alt="headshot"
@@ -153,7 +132,7 @@ class App extends Component {
         <div style={{ maxWidth: '100%', textAlign: 'center', margin: 20 }}>
           <span
             style={{
-              maxWidth: '65vw',
+              maxWidth: '800px',
               fontSize: '1.2em',
               textAlign: 'left',
               display: 'block',
@@ -162,9 +141,7 @@ class App extends Component {
               lineHeight: '24pt'
             }}
           >
-            Hi, I'm Kevin Fang!
-            <br />
-            <br /> I'm a developer and an undergrad studying Computer Science,
+            I'm a developer and an undergrad studying Computer Science,
             interested in machine learning and its applications to
             bioinformatics, finance, and other fields.
             <br />
@@ -183,8 +160,9 @@ class App extends Component {
             team, creating tools for company partners to integrate natural
             language processing into support chatbots.
             <br />
-            <br /> I'm currently a software engineering intern at Instagram on
-            the Instagram Ads Delivery and Ranking team.
+            <br /> I was a software engineering intern at Meta on the Instagram
+            Ads Ranking and Delivery team. There, I worked on improving algorithms
+            used for ranking various ads across Stories and Reels based on user interaction.
           </span>
         </div>
       </div>

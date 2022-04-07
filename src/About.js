@@ -6,7 +6,7 @@ export default class AboutComponent extends Component {
       <div style={{ maxWidth: '100%', textAlign: 'center', margin: 20 }}>
         <span
           style={{
-            maxWidth: '65vw',
+            maxWidth: '800px',
             fontSize: '1.2em',
             textAlign: 'left',
             display: 'block',

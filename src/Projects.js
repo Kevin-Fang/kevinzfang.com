@@ -38,7 +38,7 @@ export default class ProjectComponent extends Component {
     return (
       <div
         className="card"
-        style={{ margin: 10, minWidth: '40vw', maxWidth: '75vw' }}
+        style={{ margin: 10, minWidth: '40vw', maxWidth: '800px', minHeight: "90%" }}
       >
         <header className="card-header">
           <p className="card-header-title" style={{ fontSize: '1.5em' }}>
