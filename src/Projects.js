@@ -42,15 +42,14 @@ export default class ProjectComponent extends Component {
           margin: 10,
           minWidth: "40vw",
           maxWidth: "800px",
-          minHeight: "90%",
         }}
       >
         <header className="card-header">
-          <p className="card-header-title" style={{ fontSize: "1.5em" }}>
+          <p className="card-header-title" style={{ fontSize: "1.4em" }}>
             {project.name}
           </p>
         </header>
-        <div className="card-content" style={{}}>
+        <div className="card-content" style={{ height: "70vh" }}>
           <div
             className="content"
             style={{ textAlign: "center", lineHeight: "24pt" }}
@@ -94,7 +93,7 @@ export default class ProjectComponent extends Component {
               rel="noopener noreferrer"
               className="card-footer-item"
             >
-              Link
+              Project Link
             </a>
           )}
           <a
@@ -103,7 +102,7 @@ export default class ProjectComponent extends Component {
             rel="noopener noreferrer"
             className="card-footer-item"
           >
-            GitHub
+            Source Code
           </a>
         </footer>
       </div>

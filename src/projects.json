@@ -1,5 +1,13 @@
 [
   {
+    "name": "Vase, a Sharded KV Store",
+    "image": "https://github.com/kevin-fang/vase-a-sharded-kv-store-on-kubernetes/blob/main/pictures/cluster_diagram.png?raw=true",
+    "priority": 0.9,
+    "github": "https://github.com/kevin-fang/vase-a-sharded-kv-store-on-kubernetes",
+    "summary": "A sharded, consistent and scalable key-value store running on Kubernetes",
+    "description": "Vase is a sharded, consistent and scalable key-value store based on the application etcd, running on Kubernetes. We used ReplicaSet scaling for the sharding service front-end, and StatefulSet scaling for the etcd key-value store backend. We scaled both the number of replicas and shards and benchmarked using a load generation service (locust.io), and we were able to demonstrate increased throughput, decreased latency, and improved tail latency."
+  },
+  {
     "name": "Reinforced Flappy Bird",
     "image": "https://raw.githubusercontent.com/kevin-fang/reinforced-flappy-bird/master/animation.gif",
     "link": "https://www.youtube.com/watch?v=PNE6KFNn1yY",
@@ -38,14 +46,14 @@
   {
     "name": "PillUp [HopHacks 2018 - 1st Place Winner]",
     "image": "./pillup-box.jpg",
-    "link": "https://hophacks-fall2018.hackerearth.com/sprints/hophacks-fall-2018/dashboard/f309dff/submission/",
+    "link": "https://www.hackerearth.com/challenges/hackathon/hophacks-fall-2018/dashboard/f309dff/submission/pillup/",
     "priority": 1,
     "summary": "A low-cost, IoT enabled medicine dispenser for everyone",
     "github": "https://github.com/kevin-fang/PillUp",
     "description": "At HopHacks 2018, we created a robotic pill dispenser to simplify the daily routine of taking different medicines. We created a physical device using servo motors to dispense medicine, a React.js-based web frontend for physicians to monitor patient statuses, and an iOS mobile client for patients to easily dispense their medicine in the morning."
   },
   {
-    "name": "Relief Mesh [HackHarvard - Best Hack For Building Communities]",
+    "name": "ReliefMesh [HackHarvard, Best Hack For Building Communities]",
     "image": "./reliefmesh.jpg",
     "link": "https://devpost.com/software/relief-mesh-zhp5yu",
     "priority": 2,
