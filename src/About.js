@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class AboutComponent extends Component {
   getAbout = () => {
     return (
-      <div style={{ maxWidth: '100%', textAlign: 'center', margin: 20 }}>
+      <div style={{ maxWidth: "100%", textAlign: "center", margin: 20 }}>
         <span
           style={{
-            maxWidth: '800px',
-            fontSize: '1.2em',
-            textAlign: 'justify',
-            display: 'block',
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            lineHeight: '24pt'
+            maxWidth: "800px",
+            fontSize: "1.2em",
+            textAlign: "justify",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            lineHeight: "24pt",
           }}
         >
-          I'm graduated from Duke University summa cum laude, with a major in Computer Science
-          and a minor in Linguistics. I am passionate about exploring new
-          technologies and learning to best use them to build innovative
-          projects.
+          I'm graduated from Duke University summa cum laude, with a major in
+          Computer Science and a minor in Linguistics. I am passionate about
+          exploring new technologies and learning to best use them to build
+          innovative projects.
           <br />
           <br />
           I transferred to Duke as a rising sophomore in CS. Before Duke, I was
@@ -37,9 +37,9 @@ export default class AboutComponent extends Component {
   };
   render() {
     return (
-      <div id="about" style={{ width: '100%' }}>
+      <div id="about" style={{ width: "100%" }}>
         <div
-          style={{ fontSize: '4em', margin: 30, marginTop: 0, marginBottom: 0 }}
+          style={{ fontSize: "4em", margin: 30, marginTop: 0, marginBottom: 0 }}
         >
           <b>About Me</b>
         </div>
