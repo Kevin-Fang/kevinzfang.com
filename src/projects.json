@@ -31,7 +31,7 @@
     "link": "https://devpost.com/software/dear-ai",
     "priority": 1.3,
     "github": "https://github.com/kevin-fang/dear-ai",
-    "summary": "Combating depression through suggestions and recommendations, one journal entry at a time.",
+    "summary": "Combating depression through suggestions and recommendations.",
     "description": "Since many teenagers do not actively seek out support for potential mental health issues (either due to financial or personal reasons), we built an app that integrates daily journaling with sentiment analysis software, to inform teens about their emotions using machine learning and IBM Watson's Tone Analyzer API. Based on the resultant data, we recommend to them activities designed to improve their well-being."
   },
   {
@@ -56,7 +56,7 @@
     "name": "ReliefMesh [HackHarvard, Best Hack For Building Communities]",
     "image": "./reliefmesh.jpg",
     "link": "https://devpost.com/software/relief-mesh-zhp5yu",
-    "priority": 2,
+    "priority": 1.8,
     "summary": "Mesh network to help disaster relief",
     "github": "https://github.com/kevin-fang/relief-mesh",
     "description": "After seeing the damage caused by hurricane Florence, we were inspired to create a system for communication that did not depend on developed cellular networks. Using long-range 'LoRA' radios, short-range transceivers, a Raspberry Pi Zero, and GPS modules, we created a decentralized mesh network that allows users to communicate with each other over 1 mi+ ranges without the use of internet."
