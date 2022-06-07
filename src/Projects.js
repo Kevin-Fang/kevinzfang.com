@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
-import LazyLoad from 'react-lazyload';
-let projects_list = require('./projects.json');
+import React, { Component } from "react";
+import Grid from "@material-ui/core/Grid";
+import LazyLoad from "react-lazyload";
+let projects_list = require("./projects.json");
 
 projects_list.sort((a, b) => {
   return a.priority - b.priority;
@@ -13,11 +13,11 @@ export default class ProjectComponent extends Component {
       <Grid
         container
         spacing={24}
-        wrap={'wrap'}
+        wrap={"wrap"}
         direction="row"
         justify="center"
       >
-        {projects_list.map(project => {
+        {projects_list.map((project) => {
           if (project.hidden) {
             return null;
           }
@@ -31,36 +31,41 @@ export default class ProjectComponent extends Component {
     );
   };
 
-  makeCard = project => {
+  makeCard = (project) => {
     if (project.hidden) {
       return null;
     }
     return (
       <div
         className="card"
-        style={{ margin: 10, minWidth: '40vw', maxWidth: '800px', minHeight: "90%" }}
+        style={{
+          margin: 10,
+          minWidth: "40vw",
+          maxWidth: "800px",
+          minHeight: "90%",
+        }}
       >
         <header className="card-header">
-          <p className="card-header-title" style={{ fontSize: '1.5em' }}>
+          <p className="card-header-title" style={{ fontSize: "1.5em" }}>
             {project.name}
           </p>
         </header>
         <div className="card-content" style={{}}>
           <div
             className="content"
-            style={{ textAlign: 'center', lineHeight: '24pt' }}
+            style={{ textAlign: "center", lineHeight: "24pt" }}
           >
             {project.image && (
               <div>
-                <LazyLoad height={'20em'}>
+                <LazyLoad height={"20em"}>
                   <img
                     src={project.image}
                     alt={project.name}
                     style={{
-                      maxHeight: '20em',
-                      maxWidth: '40vw',
-                      marginLeft: 'auto',
-                      marginRight: 'auto'
+                      maxHeight: "20em",
+                      maxWidth: "40vw",
+                      marginLeft: "auto",
+                      marginRight: "auto",
                     }}
                   />
                 </LazyLoad>
@@ -70,7 +75,7 @@ export default class ProjectComponent extends Component {
             <i>{project.summary}</i>
             <br />
             <br />
-            <div style={{ textAlign: 'justify' }}>
+            <div style={{ textAlign: "justify" }}>
               {project.description}
               {project.highlight && (
                 <div>
@@ -107,13 +112,13 @@ export default class ProjectComponent extends Component {
 
   render() {
     return (
-      <div id="projects" style={{ width: '100%' }}>
+      <div id="projects" style={{ width: "100%" }}>
         <div
           style={{
-            fontSize: '4em',
+            fontSize: "4em",
             margin: 30,
             marginTop: 0,
-            marginBottom: 10
+            marginBottom: 10,
           }}
         >
           <b>Selected Projects</b>

@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Fade from '@material-ui/core/Fade';
-let skills = require('./skills.json');
+import React, { Component } from "react";
+import Fade from "@material-ui/core/Fade";
+let skills = require("./skills.json");
 
 export default class SkillsComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hovering: null
+      hovering: null,
     };
   }
 
-  getVisibility = name => {
+  getVisibility = (name) => {
     if (this.state.hovering === name) {
       return true;
     } else {
@@ -18,13 +18,13 @@ export default class SkillsComponent extends Component {
     }
   };
 
-  setHovering = name => {
+  setHovering = (name) => {
     this.setState({
-      hovering: name
+      hovering: name,
     });
   };
 
-  getOpacity = name => {
+  getOpacity = (name) => {
     if (this.state.hovering === name) {
       return 1;
     } else {
@@ -35,11 +35,11 @@ export default class SkillsComponent extends Component {
   createSkillsRow = (skillType, skills) => {
     return (
       <div>
-        <span style={{ fontSize: '1.2em' }}>{skillType}</span>
+        <span style={{ fontSize: "1.2em" }}>{skillType}</span>
         <br />
         <br />
-        <div className="SideBySide" style={{ flexWrap: 'wrap' }}>
-          {skills.map(skill => {
+        <div className="SideBySide" style={{ flexWrap: "wrap" }}>
+          {skills.map((skill) => {
             if (skill.icon) {
               return (
                 <div
@@ -60,14 +60,14 @@ export default class SkillsComponent extends Component {
                   <i
                     className={skill.icon}
                     style={{
-                      fontSize: '3.6em',
+                      fontSize: "3.6em",
                       opacity: this.getOpacity(skill.name),
-                      transition: 'opacity .2s'
+                      transition: "opacity .2s",
                     }}
                   />
                   <br />
                   <Fade timeout={200} in={this.getVisibility(skill.name)}>
-                    <span style={{ fontSize: '.8em' }}>{skill.name}</span>
+                    <span style={{ fontSize: ".8em" }}>{skill.name}</span>
                   </Fade>
                 </div>
               );
@@ -92,14 +92,14 @@ export default class SkillsComponent extends Component {
                     alt={skill.name}
                     src={skill.logo}
                     style={{
-                      height: '3.3em',
+                      height: "3.3em",
                       opacity: this.getOpacity(skill.name),
-                      transition: 'opacity .2s'
+                      transition: "opacity .2s",
                     }}
                   />
                   <br />
                   <Fade timeout={200} in={this.getVisibility(skill.name)}>
-                    <span style={{ fontSize: '.8em' }}>{skill.name}</span>
+                    <span style={{ fontSize: ".8em" }}>{skill.name}</span>
                   </Fade>
                 </div>
               );
@@ -114,17 +114,17 @@ export default class SkillsComponent extends Component {
   getSkills = () => {
     return (
       <div>
-        {this.createSkillsRow('Languages', skills.languages)}
-        {this.createSkillsRow('Libraries', skills.libraries)}
-        {this.createSkillsRow('Web', skills.web)}
-        {this.createSkillsRow('Miscellaneous', skills.misc)}
+        {this.createSkillsRow("Languages", skills.languages)}
+        {this.createSkillsRow("Libraries", skills.libraries)}
+        {this.createSkillsRow("Web", skills.web)}
+        {this.createSkillsRow("Miscellaneous", skills.misc)}
       </div>
     );
   };
   render() {
     return (
-      <div id="skills" style={{ width: '100%' }}>
-        <div style={{ fontSize: '4em', marginTop: 0 }}>
+      <div id="skills" style={{ width: "100%" }}>
+        <div style={{ fontSize: "4em", marginTop: 0 }}>
           <b>Technical Skills</b>
         </div>
         {this.getSkills()}

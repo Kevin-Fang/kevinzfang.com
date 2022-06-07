@@ -1,7 +1,7 @@
 [
   {
-    "company_name": "Instagram (Facebook)",
-    "position": "Software Engineering Intern",
+    "company_name": "Instagram (Meta)",
+    "position": "Software Engineer Intern",
     "company_link": "https://www.facebook.com/careers/",
     "description": [
       "Instagram Ads Ranking & Delivery team",
@@ -15,7 +15,7 @@
   },
   {
     "company_name": "Google",
-    "position": "Software Engineering Intern",
+    "position": "Software Engineer Intern",
     "company_link": "https://careers.google.com/",
     "description": [
       "Business Messages — G Suite, Google Cloud Communication Apps",
@@ -35,7 +35,7 @@
     "description": [
       "Plan and host social events for members throughout the summer and school year"
     ],
-    "dates": "May 2020 - present",
+    "dates": "May 2020 - May 2021",
     "location": "Durham, NC"
   },
   {
@@ -60,7 +60,7 @@
       "Maintained and built relationships with companies and university departments for sponsorships and talks"
     ],
     "dates": "September 2019 - December 2019",
-    "location": "Somerville, MA"
+    "location": "Durham, NC"
   },
   {
     "company_name": "Intralinks",
@@ -73,7 +73,7 @@
       "Predicted M&A deals with a machine learning pipeline consisting of supervised and unsupervised learning, including NLP techniques such as sentiment analysis and named entity recognition using BERT models"
     ],
     "dates": "May 2019 - August 2019",
-    "location": "Somerville, MA"
+    "location": "New York, NY"
   },
   {
     "company_name": "Curoverse Research",

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-let experience_list = require('./experience.json');
+let experience_list = require("./experience.json");
 
 export default class ExperienceComponent extends Component {
   getExperience = () => {
     return (
-      <div style={{ textAlign: 'center', margin: 25 }}>
-        {experience_list.map(experience => {
+      <div style={{ textAlign: "center", margin: 25 }}>
+        {experience_list.map((experience) => {
           return (
-            <div style={{ marginTop: '2.5vh' }}>
+            <div style={{ marginTop: "2.5vh" }}>
               <i>
                 {experience.dates} | {experience.location}
               </i>
@@ -16,17 +16,17 @@ export default class ExperienceComponent extends Component {
 
               <b
                 style={{
-                  fontSize: '2em',
+                  fontSize: "2em",
                   marginTop: 0,
-                  maxWidth: '800px',
-                  flexWrap: 'wrap',
-                  textAlign: 'left',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto'
+                  maxWidth: "800px",
+                  flexWrap: "wrap",
+                  textAlign: "left",
+                  display: "block",
+                  marginLeft: "auto",
+                  marginRight: "auto",
                 }}
               >
-                {experience.position} @{' '}
+                {experience.position} @{" "}
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -35,16 +35,16 @@ export default class ExperienceComponent extends Component {
                   {experience.company_name}
                 </a>
               </b>
-              {experience.description.map(description => {
+              {experience.description.map((description) => {
                 return (
                   <span
                     style={{
-                      textAlign: 'justify',
-                      maxWidth: '800px',
-                      display: 'block',
-                      marginLeft: 'auto',
-                      marginRight: 'auto',
-                      fontSize: '1em'
+                      textAlign: "justify",
+                      maxWidth: "800px",
+                      display: "block",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                      fontSize: "1em",
                     }}
                   >
                     &gt; {description}
@@ -60,8 +60,8 @@ export default class ExperienceComponent extends Component {
   };
   render() {
     return (
-      <div id="experience" style={{ width: '100%' }}>
-        <div style={{ fontSize: '4em', marginTop: 0 }}>
+      <div id="experience" style={{ width: "100%" }}>
+        <div style={{ fontSize: "4em", marginTop: 0 }}>
           <b>Experience</b>
         </div>
         {this.getExperience()}
