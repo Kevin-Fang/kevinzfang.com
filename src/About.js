@@ -15,8 +15,8 @@ export default class AboutComponent extends Component {
             lineHeight: '24pt'
           }}
         >
-          I'm currently a senior at Duke University majoring in Computer Science
-          with a minor in Linguistics. I am passionate about exploring new
+          I'm graduated from Duke University summa cum laude, with a major in Computer Science
+          and a minor in Linguistics. I am passionate about exploring new
           technologies and learning to best use them to build innovative
           projects.
           <br />
