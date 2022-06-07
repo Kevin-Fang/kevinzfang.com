@@ -1,10 +1,10 @@
 [
   {
-    "name": "Vase, a Sharded KV Store",
+    "name": "Vase, a Sharded KV Store on Kubernetes",
     "image": "https://github.com/kevin-fang/vase-a-sharded-kv-store-on-kubernetes/blob/main/pictures/cluster_diagram.png?raw=true",
     "priority": 0.9,
     "github": "https://github.com/kevin-fang/vase-a-sharded-kv-store-on-kubernetes",
-    "summary": "A sharded, consistent and scalable key-value store running on Kubernetes",
+    "summary": "A sharded, consistent and scalable key-value store running on Kubernetes based on etcd",
     "description": "Vase is a sharded, consistent and scalable key-value store based on the application etcd, running on Kubernetes. We used ReplicaSet scaling for the sharding service front-end, and StatefulSet scaling for the etcd key-value store backend. We scaled both the number of replicas and shards and benchmarked using a load generation service (locust.io), and we were able to demonstrate increased throughput, decreased latency, and improved tail latency."
   },
   {
