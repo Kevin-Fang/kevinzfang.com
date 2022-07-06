@@ -143,8 +143,8 @@ class App extends Component {
           >
             I'm a Duke University graduate interested in machine learning and
             its applications to bioinformatics, finance, and other fields. I
-            love technology and learning new things. Currently, I am a Software
-            Engineer at Citadel Securities.
+            love technology and learning new things. Currently, I am a software
+            engineer at Citadel Securities.
             <br />
             <br />
             While I was at Duke, I interned at Meta as a software engineer
@@ -162,9 +162,6 @@ class App extends Component {
             innovation team, building natural language processing pipelines to
             help streamline customer acquisition. In high school, I worked with
             Curoverse Research to help us better understand the human genome.
-            <br />
-            <br />
-            <br />
             <br />
             <br />
           </span>
