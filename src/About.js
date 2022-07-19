@@ -15,7 +15,7 @@ export default class AboutComponent extends Component {
             lineHeight: "24pt",
           }}
         >
-          I'm graduated from Duke University summa cum laude, with a major in
+          I graduated from Duke University summa cum laude, with a major in
           Computer Science and a minor in Linguistics. I am passionate about
           exploring new technologies and learning to best use them to build
           innovative projects.

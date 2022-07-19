@@ -164,9 +164,6 @@ class App extends Component {
             Curoverse Research to help us better understand the human genome.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
           </span>
         </div>
       </div>
