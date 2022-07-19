@@ -31,7 +31,7 @@
     "link": "https://devpost.com/software/dear-ai",
     "priority": 1.3,
     "github": "https://github.com/kevin-fang/dear-ai",
-    "summary": "Combating depression through suggestions and recommendations.",
+    "summary": "Combating depression through suggestions and recommendations, .",
     "description": "Since many teenagers do not actively seek out support for potential mental health issues (either due to financial or personal reasons), we built an app that integrates daily journaling with sentiment analysis software, to inform teens about their emotions using machine learning and IBM Watson's Tone Analyzer API. Based on the resultant data, we recommend to them activities designed to improve their well-being."
   },
   {
